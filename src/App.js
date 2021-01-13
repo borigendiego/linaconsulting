@@ -1,13 +1,13 @@
 import React from 'react';
-//Styles
-import './App.css';
+//Components
+import Header from './components/header';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Lina Consulting</h1>
-      </header>
+        <Header />
+        <Home />
     </div>
   );
 }
