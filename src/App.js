@@ -1,13 +1,18 @@
 import React from 'react';
 //Components
 import Header from './components/header';
-import Home from './components/Home';
+import Services from './components/services';
+import Banner from './components/banner';
+import DeliveryConsulting from './components/deliveryConsulting';
+
 
 function App() {
   return (
     <div className="App">
         <Header />
-        <Home />
+        <Banner />
+        <Services />
+        <DeliveryConsulting />
     </div>
   );
 }

@@ -3,6 +3,9 @@ $sections-background-color: #e4e4e4;
 $mobile-menu-background-color: #e4e4e4e6;
 $sections-border-color: #000;
 $white-color: #ffff;
+$basic-font-color: rgba(0, 0, 0, 0.7);
+$main-orange: rgba(255, 140, 0, 0.6);
+$main-blue: rgb(0, 0, 83);
 
 //Devices sizes
 $xs-screen: 450px;
@@ -12,6 +15,7 @@ $lg-screen: 1024px;
 //Fonts
 $title-font-family: 'Gotham light';
 $text-font-family: 'Gotham italic';
+$main-font: Arial, sans-serif;
 
 /*@font-face {
   font-family: 'Gotham light';
