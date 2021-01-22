@@ -1,1 +1,19 @@
 @import '../../css/variables';
+
+.delivery-container {
+  background-color: gray;
+}
+
+.delivery-pyramid {
+  background-color: $white-color;
+  clip-path: $pyramid-title;
+}
+
+.delivery-content-wrapper {
+  display: flex;
+}
+
+.carousel-container {
+  height: 35vh;
+  z-index: 1;
+}

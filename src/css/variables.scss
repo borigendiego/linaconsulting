@@ -17,6 +17,10 @@ $title-font-family: 'Gotham light';
 $text-font-family: 'Gotham italic';
 $main-font: Arial, sans-serif;
 
+//Pyramid sizes
+$pyramid-title-text: polygon(100% 0, 100% 64%, 50% 90%, 0 64%, 0 0);
+$pyramid-title: polygon(100% 0, 100% 8%, 50% 55%, 0 8%, 0 0);
+
 /*@font-face {
   font-family: 'Gotham light';
   font-style: normal;

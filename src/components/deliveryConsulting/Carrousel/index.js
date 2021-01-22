@@ -13,7 +13,29 @@ const MyCarousel = () => {
                 showStatus={false}
                 showThumbs={false}
                 showArrows={true}
-            />
+            >
+                <div>
+                    <img id={'first'} alt={'first'} />
+                </div>
+                <div>
+                    <img id={'second'} alt={'second'} />
+                </div>
+                <div>
+                    <img id={'third'} alt={'third'}  />
+                </div>
+                <div>
+                    <img id={'fourth'} alt={'fourth'} />
+                </div>
+                <div>
+                    <img id={'fifth'} alt={'fifth'} />
+                </div>
+                <div>
+                    <img id={'sixth'} alt={'sixth'}  />
+                </div>
+                <div>
+                    <img id={'seventh'} alt={'seventh'} />
+                </div>
+            </Carousel>
         </div>
     )
 };

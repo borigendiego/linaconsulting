@@ -1,0 +1,45 @@
+@import '../../../css/variables';
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  //TODO: Move the URL to a constants
+  #first { content:url('../../../assets/images/deliveryServices1.jpg'); }
+  #second { content:url('../../../assets/images/deliveryServices2.jpg'); }
+  #third { content:url('../../../assets/images/deliveryServices3.jpg'); }
+  #fourth { content:url('../../../assets/images/deliveryServices4.jpg'); }
+  #fifth { content:url('../../../assets/images/deliveryServices5.jpg'); }
+  #sixth { content:url('../../../assets/images/deliveryServices6.jpeg'); }
+  #seventh { content:url('../../../assets/images/deliveryServices7.png'); }
+
+  .carousel-image {
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-root {
+    height: 100%;
+  }
+
+  .slider-wrapper {
+    height: 100%;
+
+    .slider {
+      height: 100vh;
+      max-height: 100vh;
+
+      li {
+        img { height: 100vh; }
+      }
+    }
+  }
+}
