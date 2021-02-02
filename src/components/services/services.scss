@@ -1,7 +1,7 @@
 @import '../../css/variables';
 
 .tile-container {
-  margin: 2% 5%;
+  margin: 1% 5%;
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -21,4 +21,5 @@
   width: 59%;
   margin: 0 auto;
   padding-top: 1%;
+  color: $white-color;
 }

@@ -3,8 +3,9 @@ $sections-background-color: #e4e4e4;
 $mobile-menu-background-color: #e4e4e4e6;
 $sections-border-color: #000;
 $white-color: #ffff;
+$grey-color: rgb(220, 220, 220);
 $basic-font-color: rgba(0, 0, 0, 0.7);
-$main-orange: rgba(255, 140, 0, 0.6);
+$main-orange: rgb(254 ,202 ,31);
 $main-blue: rgb(0, 0, 83);
 
 //Devices sizes
@@ -20,6 +21,7 @@ $main-font: Arial, sans-serif;
 //Pyramid sizes
 $pyramid-title-text: polygon(100% 0, 100% 64%, 50% 90%, 0 64%, 0 0);
 $pyramid-title: polygon(100% 0, 100% 8%, 50% 55%, 0 8%, 0 0);
+//$pyramid-empty: polygon(100% 0, 100% 38%, 50% 85%, 0 38%, 0 0);
 
 /*@font-face {
   font-family: 'Gotham light';
