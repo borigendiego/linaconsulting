@@ -2,19 +2,52 @@
 
 .tile-content {
   margin: 2% 4%;
-  padding: 4%;
+  padding: 2%;
   width: 20%;
-  border: 1px solid #000000;
+  height: 40vh;
+  box-shadow: 10px 5px 15px #565656;
   border-radius: 10%;
+
+  .tile-title {
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 15%;
+    color: $main-orange;
+  }
+
+  .tile-image {
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+  }
+
+  .tile-text {
+    display: none;
+    font-family: Arial, sans-serif;
+    color: $white-color;
+    font-size: 0.9rem;
+  }
 }
 
-.tile-text {
-  font-family: Arial, sans-serif;
-  font-size: 1em;
-  text-align: center;
-}
+.tile-content:hover {
+  transition: all 0.5s;
+  background-color: $main-orange;
 
-.tile-image {
-  border-radius: 50%;
-  width: 100%;
+  .tile-image {
+    display: none;
+  }
+
+  .tile-title {
+    color: $basic-font-color;
+    margin: 0 auto 2% auto;
+  }
+
+  .tile-text {
+    display: block;
+  }
 }
