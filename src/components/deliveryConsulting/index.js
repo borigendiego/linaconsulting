@@ -1,6 +1,6 @@
 import React from 'react';
 //Components
-import Pyramid from '../common/Pyramid';
+import Pyramid from '../common/Pyramid/Pyramid';
 //Css
 import './deliveryConsulting.scss';
 import MyCarousel from './Carrousel';

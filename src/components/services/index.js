@@ -2,9 +2,9 @@ import React from 'react';
 //css
 import './services.scss'
 //Components
-import SectionLayout from '../common/SectionLayout';
+import SectionLayout from '../common/SectionLayout/SectionLayout';
 import Tile from './Tile';
-import Pyramid from '../common/Pyramid';
+import Pyramid from '../common/Pyramid/Pyramid';
 //Constants
 import { SERVICES_TEXT } from './constants';
 //Images

@@ -1,0 +1,23 @@
+@import '../../css/variables';
+
+.contact-container {
+  background-color: $main-orange;
+}
+
+.contact-pyramid {
+  background-color: $white-color;
+  clip-path: $pyramid-title;
+}
+
+.contact-content {
+  display: flex;
+}
+
+.contact-icon {
+  width: 20%;
+}
+
+.contact-text {
+  font-family: $main-font;
+  color: $white-color;
+}

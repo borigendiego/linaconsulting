@@ -1,0 +1,10 @@
+@import '../../../css/variables';
+
+.consultation-container {
+  background-color: $main-blue;
+  height: 20vh;
+}
+
+.consultation-content {
+  border: $main-orange solid 1px;
+}

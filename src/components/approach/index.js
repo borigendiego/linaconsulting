@@ -1,7 +1,7 @@
 import React from 'react';
 //Components
-import Pyramid from '../common/Pyramid';
-import SectionLayout from '../common/SectionLayout';
+import Pyramid from '../common/Pyramid/Pyramid';
+import SectionLayout from '../common/SectionLayout/SectionLayout';
 import Box from './boxes';
 //Css
 import './approach.scss';

@@ -5,6 +5,7 @@ import Services from './components/services';
 import Banner from './components/banner';
 import DeliveryConsulting from './components/deliveryConsulting';
 import Approach from './components/approach';
+import Contact from './components/contact';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Services />
         <DeliveryConsulting />
         <Approach />
+        <Contact />
     </div>
   );
 }
