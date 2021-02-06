@@ -14,6 +14,11 @@ li {
   list-style: none;
 }
 
+h1 {
+  color: $white-color;
+  font-size: clamp(30px, 5rem, 64px);
+}
+
 a {
   text-decoration: none;
   color: $basic-font-color;
@@ -24,7 +29,10 @@ a {
   }
 }
 
-.App {
-  max-width: 100vw;
-  width: 100vw;
+.page-title {
+  text-align: right;
+  left: 7%;
+  position: relative;
+  top: 12%;
+  width: 20%;
 }

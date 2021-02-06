@@ -1,17 +1,46 @@
 @import '../../css/variables';
 
 .header-wrapper {
+  background-color: $main-blue;
+  border-bottom: 4px solid $main-orange;
   display: flex;
   justify-content: flex-end;
-  background-color: $main-blue;
-  padding-right: 2%;
-  height: 5vh;
+  padding: 0 2%;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
-.nav-container {
-
+.header-image, .header-wrapper.sticky, .header-image-wrapper {
+  transition: all 500ms;
 }
 
+.header-image { height: 22vh; }
+
+.header-wrapper.sticky {
+  .header-image-wrapper {
+    .header-image {
+      transition: all 500ms;
+      height: 10vh;
+    }
+  }
+}
+
+.header-image-wrapper {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  left: 8%;
+  position: absolute;
+  z-index: 1;
+}
+
+#large-screen-menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
 
 .nav-menu {
   display: flex;
@@ -22,6 +51,25 @@
   a {
     text-decoration: none;
     color: $white-color;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0;
+    transition: all 300ms;
+    width: 100%;
+
+    a {
+      transition: all 300ms;
+    }
+  }
+
+  li:hover {
+    background-color: $main-orange;
+    a {
+      color: $main-blue;
+    }
   }
 
   .header-elements {

@@ -6,6 +6,10 @@ import './banner.scss';
 const Banner = () => {
     return (
         <div className={'banner-container'}>
+            <div className={'page-title'}>
+                <h1>Lina</h1>
+                <h1>Consulting</h1>
+            </div>
             <p className={'banner-text'}>
                 GRAPHIC DESIGN AND DIGITAL PROJECT
                 MANAGMENT CONSULTING TO DELIVER
