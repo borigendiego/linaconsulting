@@ -1,27 +1,27 @@
 const HEADER_LINKS = [
     {
         label: 'Home',
-        linkTo: '#HOME'
+        linkTo: '/'
     },
     {
         label: 'Services',
-        linkTo: '#SERVICES'
+        linkTo: '/#SERVICES'
     },
     {
         label: 'Our aproach',
-        linkTo: '#OUR-APROACH'
+        linkTo: '/#APPROACH'
     },
     {
         label: 'Case studies',
-        linkTo: '#CASE-STUDIES'
+        linkTo: '/'
     },
     {
         label: 'About us',
-        linkTo: '#ABOUT-US'
+        linkTo: '/about'
     },
     {
         label: 'Contact',
-        linkTo: '#CONTACT'
+        linkTo: '/contact'
     },
 ];
 

@@ -91,7 +91,7 @@ const Services = () => {
 
 
     return (
-        <div className={'services-container'}>
+        <div className={'services-container'} id={'SERVICES'}>
             <Pyramid>
                 <h2 className={'pyramid-title'}>Welcome to Lina Consulting</h2>
                 <p className={'pyramid-text'}>{SERVICES_TEXT}</p>

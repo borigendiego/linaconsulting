@@ -20,4 +20,15 @@
 .contact-text {
   font-family: $main-font;
   color: $white-color;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2%;
 }

@@ -1,7 +1,6 @@
 @import '../../../css/variables';
 
 .box {
-  background-color: #333;
   display: grid;
   padding: 20px;
   place-items: center;
@@ -10,6 +9,7 @@
 
   &:hover {
     background-color: $main-orange;
+    background-image: none;
 
     .box-text {
       display: block;

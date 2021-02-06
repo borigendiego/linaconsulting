@@ -1,0 +1,58 @@
+@import '../../css/variables';
+
+.contact-page {
+  display: flex;
+  background-color: $main-orange;
+  height: 90vh;
+}
+
+.contact-page-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+.contact-logo-title {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 10%;
+
+  .contact-logo {
+
+  }
+  .contact-title {
+    display: flex;
+    font-family: $title-font-family;
+    align-items: flex-end;
+    font-size: 3.5rem;
+    margin-left: 1%;
+  }
+
+  .contact-title-one {
+    font-family: $title-font-family;
+    font-size: 3.5rem;
+  }
+}
+
+.contact-page-item {
+  justify-content: end;
+  width: 30%;
+}
+
+.contact-page-img {
+  width: 15%;
+}
+
+.icons-text {
+  display: flex;
+
+  .contact-page-text {
+    font-family: $main-font;
+    text-align: center;
+  }
+
+  .contact-page-img {
+    width: 25%;
+  }
+}
