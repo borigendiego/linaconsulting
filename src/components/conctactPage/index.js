@@ -17,7 +17,6 @@ const ContactP = () => {
         <div className={'contact-page'}>
             <div className={'contact-page-content'}>
                 <div className={'contact-logo-title'}>
-                    <img src={logo} alt={logo} className={'contact-logo'}/>
                     <h1 className={'contact-title'}>Get</h1>
                     <h2 className={'contact-title-one'}>in touch</h2>
                 </div>

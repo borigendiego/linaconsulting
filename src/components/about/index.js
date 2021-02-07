@@ -12,7 +12,6 @@ const About = () => {
         <div className={'about-section'}>
             <div className={'about-content'}>
                 <div className={'logo-title'}>
-                    <img src={logo} alt={logo} className={'logo'}/>
                     <h1 className={'about-title'}>About</h1>
                     <h2 className={'about-title-one'}>our Company</h2>
                 </div>

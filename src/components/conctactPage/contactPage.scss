@@ -2,36 +2,33 @@
 
 .contact-page {
   display: flex;
-  background-color: $main-orange;
+  background-color: $white-color;
   height: 90vh;
+  padding-top: 12vh;
 }
 
 .contact-page-content {
   display: flex;
   flex-wrap: wrap;
   width: 45%;
+  height: 90%;
 }
 
 .contact-logo-title {
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  margin-left: 10%;
 
-  .contact-logo {
-
-  }
   .contact-title {
     display: flex;
     font-family: $title-font-family;
-    align-items: flex-end;
-    font-size: 3.5rem;
-    margin-left: 1%;
+    color: $main-blue;
+    width: 54%;
+    justify-content: flex-end;
   }
 
   .contact-title-one {
     font-family: $title-font-family;
-    font-size: 3.5rem;
+    color: $main-blue;
+    font-size: 4rem;
   }
 }
 
@@ -46,6 +43,7 @@
 
 .icons-text {
   display: flex;
+  height: 22vh;
 
   .contact-page-text {
     font-family: $main-font;

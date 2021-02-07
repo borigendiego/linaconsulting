@@ -37,4 +37,18 @@
   .text-box {
     height: 20vh;
   }
+
+  .form-button {
+    padding: 1.5% 2%;
+    color: $main-orange;
+    background-color: $main-blue;
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $main-orange;
+      color: $main-blue;
+      cursor: pointer;
+    }
+  }
 }

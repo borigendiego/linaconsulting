@@ -9,6 +9,8 @@
   width: 25%;
   text-align: justify;
   margin-left: 10%;
+  padding-top: 14vh;
+
 }
 
 .logo-title {
@@ -16,23 +18,23 @@
   flex-wrap: wrap;
   position: relative;
   bottom: 1rem;
-
-  .logo {
-    width: 35%;
-  }
 }
 
 .about-title {
   font-family: $title-font-family;
   display: flex;
   align-items: flex-end;
-  font-size: 2.8rem;
   margin-left: 1%;
+  font-size: 3.5rem;
+  justify-content: flex-end;
+  width: 84%;
+  color: $main-blue;
 }
 
 .about-title-one {
   font-family: $title-font-family;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: $main-blue;
 }
 
 .about-title-two {
@@ -45,5 +47,5 @@
 .about-text {
   font-family: $main-font;
   margin-top: 3%;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
 }
