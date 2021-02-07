@@ -3,7 +3,7 @@ import React from 'react';
 import Pyramid from '../common/Pyramid/Pyramid';
 import MyCustomCar from './CustomCarrouselSection'
 //Css
-//import './deliveryConsulting.scss';
+import './deliveryConsulting.scss';
 import MyCarousel from './Carrousel';
 //Constants
 import { DELIVERY_TEXT } from './constants';
@@ -11,9 +11,8 @@ import { DELIVERY_TEXT } from './constants';
 const DeliveryConsulting = () => {
     return(
         <div className={'delivery-container'}>
-            <Pyramid customClass={'delivery-pyramid'}>
-                <h2 className={'pyramid-title'}>Delivery Consulting Services</h2>
-            </Pyramid>
+            <h2 className={'pyramid-title'}>Delivery Consulting Services</h2>
+            <Pyramid customClass={'pyramid-overlay'} />
            {/* <div className={'delivery-content-wrapper'}>
                 <div className={'carousel-container'}>
                     <MyCarousel />

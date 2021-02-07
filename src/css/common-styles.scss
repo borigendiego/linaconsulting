@@ -19,3 +19,9 @@ a {
     text-decoration: underline;
   }
 }
+
+@mixin tile_container {
+  padding: 2%;
+  box-shadow: 10px 5px 15px #565656;
+  border-radius: 10%;
+}

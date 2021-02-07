@@ -1,7 +1,9 @@
 @import '../../css/variables';
 
 .delivery-container {
-  background-color: $grey-color;
+  height: 60vh;
+  margin: 7% 0;
+  position: relative;
 }
 
 .delivery-pyramid {
@@ -13,7 +15,13 @@
   display: flex;
 }
 
-.carousel-container {
-  height: 35vh;
-  z-index: 1;
+.pyramid-overlay {
+  background-color: $grey-color;
+  clip-path: polygon(50% 20%, 100% 0, 100% 70%, 49% 100%, 0 70%, 0 0);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }

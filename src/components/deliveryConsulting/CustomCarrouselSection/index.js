@@ -15,7 +15,7 @@ import arrow from '../../../assets/images/atras.svg'
 
 const CustomCarouselSection = () => {
     return (
-        <div className={'carousel-wrapper'} style={{display: 'flex', justifyContent: 'center'}}>
+        <div className={'carousel-wrapper'}>
             <CarouselProvider
                 naturalSlideWidth={200}
                 naturalSlideHeight={125}
@@ -41,7 +41,7 @@ const CustomCarouselSection = () => {
                         <img src={arrow} />
                     </ButtonNext>
                 </div>
-                <DotGroup></DotGroup>
+                <DotGroup className={'dots-container'} />
             </CarouselProvider>
             <div className={'description-wrapper'}>
                 <h2>Title</h2>

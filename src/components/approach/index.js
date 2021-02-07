@@ -58,7 +58,6 @@ const Approach = () => {
     ];
     return(
         <div className={'approach-container'} id={'APPROACH'}>
-            <Pyramid customClass={'approach-pyramid'} />
             <SectionLayout sectionTitle={'Our Approach'} sectionSubTitle={'Our 6 Pillars of a Success Marketing Campaign'} sectionId={'APPROACH'}>
                 <div className={'boxes-container'}>
                     {mockData.map((value, index) => <Box boxData={value} />)}
