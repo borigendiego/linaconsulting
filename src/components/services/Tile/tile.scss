@@ -37,6 +37,8 @@
 .tile-content:hover {
   transition: all 0.5s;
   background-color: $main-orange;
+  position: relative;
+  margin-top: 1%;
 
   .tile-image {
     display: none;

@@ -1,0 +1,40 @@
+.carousel-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.description-wrapper {
+  width: 30%;
+}
+
+.sliders {
+  align-items: center;
+  display: flex;
+}
+
+.slider-wrapper {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+.arrow-button {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.arrow-button.next {
+  transform: rotate(180deg);
+}
