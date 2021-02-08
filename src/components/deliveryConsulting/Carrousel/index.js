@@ -5,13 +5,13 @@ import { Carousel } from 'react-responsive-carousel';
 //Css
 import './carousel.scss';
 //Images
-import image1 from '../../../assets/images/deliveryServices1.jpg';
-import image2 from '../../../assets/images/deliveryServices2.jpg';
-import image3 from '../../../assets/images/deliveryServices3.jpg';
-import image4 from '../../../assets/images/deliveryServices4.jpg';
-import image5 from '../../../assets/images/deliveryServices5.jpg';
-import image6 from '../../../assets/images/deliveryServices6.jpeg';
-import image7 from '../../../assets/images/deliveryServices7.png';
+import image1 from '../../../assets/images/consulting/deliveryServices1.jpg';
+import image2 from '../../../assets/images/consulting/deliveryServices2.jpg';
+import image3 from '../../../assets/images/consulting/deliveryServices3.jpg';
+import image4 from '../../../assets/images/consulting/deliveryServices4.jpg';
+import image5 from '../../../assets/images/consulting/deliveryServices5.jpg';
+import image6 from '../../../assets/images/consulting/deliveryServices6.jpeg';
+import image7 from '../../../assets/images/consulting/deliveryServices7.png';
 
 const MyCarousel = () => {
     return(

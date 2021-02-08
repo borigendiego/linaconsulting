@@ -1,7 +1,7 @@
 @import '../../css/variables';
 
 .delivery-container {
-  height: 60vh;
+  height: 70vh;
   margin: 7% 0;
   position: relative;
 }
@@ -9,10 +9,6 @@
 .delivery-pyramid {
   background-color: $white-color;
   clip-path: $pyramid-title;
-}
-
-.delivery-content-wrapper {
-  display: flex;
 }
 
 .pyramid-overlay {
