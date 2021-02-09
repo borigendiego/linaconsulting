@@ -22,7 +22,7 @@ const CustomCarouselSection = (props) => {
                 naturalSlideWidth={200}
                 naturalSlideHeight={125}
                 totalSlides={3}
-                class={'carousel-container'}
+                className={'carousel-container'}
             >
                 <div className={'sliders'}>
                     <ButtonBack
@@ -36,7 +36,7 @@ const CustomCarouselSection = (props) => {
                     >
                         {
                             data.map((item, index) =>
-                                <Slide index={index}><img src={item.image} /></Slide>
+                                <Slide key={item.id} index={index}><img src={item.image} /></Slide>
                             )
                         }
                     </Slider>

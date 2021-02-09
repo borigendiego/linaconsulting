@@ -1,6 +1,5 @@
 import React from 'react';
 //Components
-import Pyramid from '../common/Pyramid/Pyramid';
 import SectionLayout from '../common/SectionLayout/SectionLayout';
 import Box from './boxes';
 //Css
@@ -60,7 +59,7 @@ const Approach = () => {
         <div className={'approach-container'} id={'APPROACH'}>
             <SectionLayout sectionTitle={'Our Approach'} sectionSubTitle={'Our 6 Pillars of a Success Marketing Campaign'} sectionId={'APPROACH'}>
                 <div className={'boxes-container'}>
-                    {mockData.map((value, index) => <Box boxData={value} />)}
+                    {mockData.map((value, index) => <Box key={value.title} boxData={value} />)}
                 </div>
             </SectionLayout>
         </div>

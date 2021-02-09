@@ -16,6 +16,7 @@ import image5 from '../../assets/images/consulting/deliveryServices5.jpg'
 
 const DATA = [
     {
+        id: 1,
       image: image1,
       title: 'Digital Transformation',
       paragraph: 'Improving business processes, people behaviours and\n' +
@@ -28,11 +29,13 @@ const DATA = [
 
     },
     {
+        id: 2,
         image: image2,
         title: 'Website build and maintain services',
         paragraph: 'Texto 2'
     },
     {
+        id: 3,
         image: image3,
         title: 'Project Management',
         paragraph: 'With over 20 years of Project Management\n' +
@@ -63,6 +66,7 @@ const DATA = [
             'quantitative information.'
     },
     {
+        id: 4,
         image: image4,
         title: 'Website build and maintain services',
         paragraph: 'Texto 4'

@@ -16,7 +16,7 @@ const Header = () => {
             <ul className={'nav-menu'} id={'large-screen-menu'}>
                 {
                     HEADER_LINKS.map((item) =>
-                        <li className={'nav-element'}><a href={item.linkTo}>{item.label}</a></li>
+                        <li key={item.label} className={'nav-element'}><a href={item.linkTo}>{item.label}</a></li>
                     )
                 }
             </ul>
