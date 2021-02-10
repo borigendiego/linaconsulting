@@ -76,7 +76,7 @@ const DATA = [
 const DeliveryConsulting = () => {
     return(
         <div className={'delivery-container'}>
-            <h2 className={'pyramid-title'}>Delivery Consulting Services</h2>
+            <h2 className={'pyramid-title py-title'}>Delivery Consulting Services</h2>
             <Pyramid customClass={'pyramid-overlay'} />
             <MyCustomCar data={DATA} />
         </div>

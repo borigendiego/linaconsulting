@@ -26,7 +26,7 @@
 .link-consultation {
   background-color: $main-orange;
   font-size: 1.2rem;
-  padding: 5px 1%;
+  padding: 1%;
   margin: 1% 1%;
   position: relative;
   left: 40%;
@@ -34,4 +34,25 @@
 
 .link-text {
 
+}
+
+@media (max-width: $xs-screen) {
+  .consultation-container {
+    height: 15vh;
+  }
+
+  .consultation-content {
+    top: 25%;
+    margin: 0 10%;
+  }
+
+  .consultation-text {
+    padding: 1% 1% 1% 2%;
+    margin: 0;
+  }
+
+  .link-consultation {
+    left: 0;
+    margin-right: 5%;
+  }
 }

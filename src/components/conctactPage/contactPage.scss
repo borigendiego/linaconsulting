@@ -37,10 +37,6 @@
   width: 30%;
 }
 
-.contact-page-img {
-  width: 15%;
-}
-
 .icons-text {
   display: flex;
   height: 22vh;
@@ -52,5 +48,31 @@
 
   .contact-page-img {
     width: 25%;
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .contact-page {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contact-page-content {
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+  }
+
+  .contact-page-item {
+    justify-content: center;
+  }
+
+  .icons-text {
+    height: auto;
+    justify-content: space-between;
+
+    .contact-page-img {
+      width: 60%;
+    }
   }
 }

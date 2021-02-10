@@ -23,3 +23,14 @@
   padding-top: 1%;
   color: $white-color;
 }
+
+@media (max-width: $xs-screen) {
+  .tile-container {
+    display: block;
+  }
+
+  .pyramid-text{
+    width: 90%;
+    font-size: 1rem;
+  }
+}

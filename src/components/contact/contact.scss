@@ -6,7 +6,7 @@
 
 .contact-pyramid {
   background-color: $white-color;
-  clip-path: $pyramid-title;
+  clip-path: $pyramid-empty;
 }
 
 .contact-content {
@@ -31,4 +31,8 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 2%;
+}
+
+@media (max-width: $xs-screen) {
+  .contact-icon{ width: 40%; }
 }
