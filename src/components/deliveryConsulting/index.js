@@ -1,32 +1,28 @@
 import React from 'react';
 //Components
 import Pyramid from '../common/Pyramid/Pyramid';
-import MyCustomCar from './CustomCarrouselSection'
+import MyCarousel from './CustomCarrouselSection'
 //Css
 import './deliveryConsulting.scss';
-import MyCarousel from './Carrousel';
 //Constants
-import { DELIVERY_TEXT } from './constants';
 import image1 from '../../assets/images/consulting/deliveryServices1.jpg'
 import image2 from '../../assets/images/consulting/deliveryServices2.jpg'
 import image3 from '../../assets/images/consulting/deliveryServices3.jpg'
 import image4 from '../../assets/images/consulting/deliveryServices4.jpg'
 import image5 from '../../assets/images/consulting/deliveryServices5.jpg'
 
-
 const DATA = [
     {
         id: 1,
-      image: image1,
-      title: 'Digital Transformation',
-      paragraph: 'Improving business processes, people behaviours and\n' +
-          'new information technology and systems has enabled the\n' +
-          'digital transformations across multiple organisations. This\n' +
-          'wealth of experience in different industries has given us\n' +
-          'the ability to be adaptable and exible to cause and\n' +
-          'manage disruption to deal with exponential changes in\n' +
-          'technology.'
-
+        image: image1,
+        title: 'Digital Transformation',
+        paragraph: 'Improving business processes, people behaviours and\n' +
+        'new information technology and systems has enabled the\n' +
+        'digital transformations across multiple organisations. This\n' +
+        'wealth of experience in different industries has given us\n' +
+        'the ability to be adaptable and exible to cause and\n' +
+        'manage disruption to deal with exponential changes in\n' +
+        'technology.'
     },
     {
         id: 2,
@@ -78,7 +74,7 @@ const DeliveryConsulting = () => {
         <div className={'delivery-container'}>
             <h2 className={'pyramid-title py-title'}>Delivery Consulting Services</h2>
             <Pyramid customClass={'pyramid-overlay'} />
-            <MyCustomCar data={DATA} />
+            <MyCarousel data={DATA} />
         </div>
     )
 };
