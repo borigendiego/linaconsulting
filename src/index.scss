@@ -38,10 +38,10 @@ a {
 }
 
 .page-title {
-  text-align: right;
-  left: 7%;
-  position: relative;
-  top: 12%;
-  width: 22%;
+  display: inline-block;
   font-family: $title-font-family;
+  text-align: right;
+  position: relative;
+  left: 6%;
+  top: 12%;
 }

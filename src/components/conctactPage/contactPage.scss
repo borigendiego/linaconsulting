@@ -15,20 +15,18 @@
 }
 
 .contact-logo-title {
-  display: flex;
+  display: inline-block;
+  font-family: $title-font-family;
+  text-align: right;
+  position: relative;
+  left: 20%;
 
   .contact-title {
-    display: flex;
-    font-family: $title-font-family;
     color: $main-blue;
-    width: 54%;
-    justify-content: flex-end;
   }
 
   .contact-title-one {
-    font-family: $title-font-family;
     color: $main-blue;
-    font-size: 4rem;
   }
 }
 
