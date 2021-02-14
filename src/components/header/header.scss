@@ -84,3 +84,9 @@
     }
   }
 }
+
+@media (max-width: $xs-screen) {
+  #large-screen-menu {
+    display: none;
+  }
+}
