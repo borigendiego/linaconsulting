@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './customCarousel.scss';
 import {
     CarouselProvider,
     Slider,
@@ -9,11 +8,12 @@ import {
     DotGroup,
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
+//Styles
+import './customCarousel.scss';
+//Icon
 import arrow from '../../../assets/images/atras.svg'
 
-const CustomCarouselSection = (props) => {
-    const { data } = props;
+const CustomCarouselSection = ({ data }) => {
     const [currentItem, setCurrentItem] = useState(0);
 
     return (
@@ -36,7 +36,9 @@ const CustomCarouselSection = (props) => {
                     >
                         {
                             data.map((item, index) =>
-                                <Slide key={item.id} index={index}><img alt={item.title} src={item.image} /></Slide>
+                                <Slide key={item.id} index={index}>
+                                    <img alt={item.title} src={item.image} />
+                                </Slide>
                             )
                         }
                     </Slider>

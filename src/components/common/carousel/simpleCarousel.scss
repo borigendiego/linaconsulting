@@ -1,0 +1,55 @@
+
+.simple-carousel-container {
+  width: 100%;
+}
+
+.simple-carousel-wrapper {
+  display: flex;
+}
+
+.simple-carousel_slider {
+  width: 80%;
+}
+
+.simple-carouse_slide {
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.simple-carouse_slide_title {
+  background-color: #feca1fa8;
+  color: #ffffff;
+  padding: 3%;
+  position: relative;
+  text-align: center;
+  top: 100%;
+  transform: translateY(-100%);
+  transition: all 300ms;
+}
+
+.simple-carouse_slide_text {
+  padding: 5%;
+  visibility: hidden;
+}
+
+.simple-carouse_slide:hover {
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .simple-carouse_slide_title {
+    background-color: #feca1f;
+    top: 0;
+    transform: translateY(0);
+  }
+
+  .simple-carouse_slide_text {
+    visibility: visible;
+  }
+}
