@@ -67,6 +67,12 @@ const DATA = [
         title: 'Website build and maintain services',
         paragraph: 'Texto 4'
     },
+    {
+        id: 5,
+        image: image5,
+        title: 'Website build and maintain services',
+        paragraph: 'Texto 4'
+    },
 ];
 
 const DeliveryConsulting = () => {

@@ -29,7 +29,7 @@ const CustomCarouselSection = ({ data }) => {
                         className={'arrow-button back'}
                         onClick={() => setCurrentItem(currentItem - 1)}
                     >
-                        <img src={arrow} />
+                        <img alt={'back-arrow'} src={arrow} />
                     </ButtonBack>
                     <Slider
                         className={'slider-wrapper'}
@@ -46,7 +46,7 @@ const CustomCarouselSection = ({ data }) => {
                         className={'arrow-button next'}
                         onClick={() => setCurrentItem(currentItem + 1)}
                     >
-                        <img src={arrow} />
+                        <img alt={'next-arrow'} src={arrow} />
                     </ButtonNext>
                 </div>
                 <DotGroup className={'dots-container'} />
