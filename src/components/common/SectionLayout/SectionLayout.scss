@@ -1,5 +1,9 @@
 @import '../../../css/variables';
 
+.section-container {
+  margin: 5% 0;
+}
+
 .section-title {
   text-align: center;
   text-transform: uppercase;
@@ -11,4 +15,5 @@
   text-align: center;
   font-family: $main-font;
   font-size: 1.5rem;
+  margin: 2% 0;
 }

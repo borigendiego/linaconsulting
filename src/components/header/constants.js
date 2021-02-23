@@ -13,7 +13,7 @@ const HEADER_LINKS = [
     },
     {
         label: 'Case studies',
-        linkTo: '/'
+        linkTo: '/#CASE'
     },
     {
         label: 'About us',
