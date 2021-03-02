@@ -21,3 +21,13 @@
   width: 45%;
   right: 0;
 }
+
+@media (max-width: $xs-screen) {
+  .banner-text {
+    padding-left: 4%;
+  }
+
+  .page-title {
+    padding: 4% 0 0 2%;
+  }
+}
