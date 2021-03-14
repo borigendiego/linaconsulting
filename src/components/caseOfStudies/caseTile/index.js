@@ -2,8 +2,7 @@ import React from 'react';
 //Styles
 import './caseTile.scss'
 const CaseTile = (props) => {
-
-    const { id, title, text } = props.caseData;
+    const { title, text } = props.caseData;
 
     return (
         <div className={'case-tile-wrapper'}>
