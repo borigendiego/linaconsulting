@@ -12,46 +12,39 @@ export const CAROUSEL_DATA = [
         id: 1,
         title: 'Digital Transformation & Program Management',
         text: ' Program Management of new website builds across multiple brands on a SAP Hybris and Adobe Experience' +
-            'Manager (AEM) Platform. Program streams include CRM, Omni Channel, Digital marketing and analytics Align' +
-            'Delivery of program to Digital Marketing Strategy. Accountable for Agile Transformation across the group' +
+            'Manager (AEM) Platform. Accountable for Agile Transformation across the group' +
             'implementing Digital Engineering practices, continuous improvement, tools and process and cultural change' +
-            'Responsible for vendor/partner management and contracts. Program Manager for the Platform. Senior' +
-            'stakeholder management and communications on program status, issue resolution and risk mitigation',
+            'Responsible for vendor/partner management and contracts.',
         image: image1,
     },
     {
         id: 2,
-        title: 'titulo 2',
-        text: 'Project Managed multiple projects across Digital and CRM implementing Cñoud Telephony and IVR solution' +
-            'through partners using Agile methodology and leading teams of Solution Architects, Business Technology' +
-            ' Partners, Developers and Testers to deliver enhancements to existing systems. Project Maanged the Physical' +
-            'Infrascrtucture move to AWS cloud environments using Agile Methodology onshore and offshore teams. ' +
-            'Agile Projects Management of SAP Hybris project to deliver a Marketplace using an Agiler Framework,' +
-            ' coaching team members and peers on Agile process, tools and cultural change',
+        title: 'Agile Project Management',
+        text: 'Using Agile Methodology and leading teams of Solutions Architects, Business Technology Partners, Developers and Testers to deliver enhancements to existing systems',
         image: image2,
     },
     {
         id: 3,
-        title: 'titulo 3',
-        text: 'Text 3',
+        title: 'Business Case Creation',
+        text: 'Analysed current environment and recommended options for a new in-house call centre, resulting in successful implementation including training , systems and processes',
         image: image3,
     },
     {
         id: 4,
-        title: 'titulo 4',
-        text: 'Text 4',
+        title: 'Business Process Re-Engineering',
+        text: 'Conducted Business Process re-engineering on frontline services and implemented CRM enhancements across the contact centre and web front end.',
         image: image4,
     },
     {
         id: 5,
-        title: 'titulo 5',
-        text: 'Text 5',
+        title: 'Customer Relationship Management',
+        text: 'Delivered large technical and non-technical programs of work and best practices to international organisation with redefinition and delivery of CRM strategy and solutions.',
         image: image5,
     },
     {
         id: 6,
-        title: 'titulo 6',
-        text: 'Text 6',
+        title: 'Digital Project Management',
+        text: 'Managed the estimation process, analysis and planning for IT to deliver Business Case for a Retail Program.',
         image: image6,
     }
 ];
