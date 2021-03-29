@@ -1,12 +1,34 @@
 @import '../../../css/variables';
 
+@mixin tile-on-hover {
+  background-color: $main-orange;
+  position: relative;
+
+  .tile-image { display: none; }
+
+  .tile-title {
+    color: $basic-font-color;
+    margin: 0 auto 2% auto;
+  }
+
+  .tile-text {
+    display: block;
+    text-align: center;
+  }
+}
+
 .tile-content {
-  margin: 2% 4%;
+  transition: all 0.5s;
+  margin: 2% 0;
   padding: 2%;
-  width: 20%;
-  height: 40vh;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 10px 5px 15px #565656;
   border-radius: 10%;
+  position: relative;
+  top: 0;
 
   .tile-title {
     font-size: 1.1em;
@@ -27,45 +49,25 @@
 
   .tile-text {
     display: none;
-    font-family: Arial, sans-serif;
     color: $white-color;
     font-size: 0.9rem;
   }
 }
 
 .tile-content:hover {
-  transition: all 0.5s;
-  background-color: $main-orange;
-  position: relative;
-  margin-top: 1%;
+  @include tile-on-hover;
+  top: -15px;
+}
 
-  .tile-image {
-    display: none;
-  }
-
-  .tile-title {
-    color: $basic-font-color;
-    margin: 0 auto 2% auto;
-  }
-
-  .tile-text {
-    display: block;
-  }
+@media (min-width: $lg-screen) {
+  .tile-content { min-height: 40vh; }
 }
 
 @media (max-width: $xs-screen) {
   .tile-content {
-    width: 60%;
+    @include tile-on-hover;
+    width: 100%;
     height: 30vh;
-    margin: 4% auto;
-
-    .tile-image {
-      height: 15vh;
-      width: 15vh;
-    }
-
-    .tile-text {
-      text-align: center;
-    }
+    margin: 10% auto;
   }
 }

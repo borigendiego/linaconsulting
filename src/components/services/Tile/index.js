@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 //css
 import './tile.scss';
 
 
-const Tile = (props) => {
-    const { key, image, title, text } = props.tileData;
+const Tile = ({ tileData }) => {
+    const { key, image, title, text } = tileData;
 
     return(
         <div className={'tile-content'}>
@@ -13,6 +14,13 @@ const Tile = (props) => {
             <p className={'tile-text'}>{text}</p>
         </div>
     )
+};
+
+Tile.prototypes = {
+    key: PropTypes.string,
+    image: PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string,
 };
 
 export default Tile;

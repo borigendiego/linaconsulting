@@ -15,7 +15,6 @@ import image4 from '../../assets/images/services4.jpg'
 import image5 from '../../assets/images/services5.jpg'
 import image6 from '../../assets/images/services6.jpg'
 const Services = () => {
-
     const mockData = [
         {
             image: image1,
@@ -73,14 +72,18 @@ const Services = () => {
         },
     ];
 
-
     return (
         <div className={'services-container'} id={'SERVICES'}>
             <Pyramid>
                 <h2 className={'pyramid-title'}>Welcome to Lina Consulting</h2>
                 <p className={'pyramid-text'}>{SERVICES_TEXT}</p>
             </Pyramid>
-            <SectionLayout sectionTitle={'Our Services'} sectionSubTitle={'Design & Marketing Services:'} sectionId={'SERVICES'}>
+            <SectionLayout
+                sectionTitle={'Our Services'}
+                sectionSubTitle={'Design & Marketing Services:'}
+                sectionId={'SERVICES'}
+                layoutWidth={'lg'}
+            >
                 <div className={'tile-container'}>
                     {mockData.map((value, index) => <Tile tileData={value} key={index} />)}
                 </div>

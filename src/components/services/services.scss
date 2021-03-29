@@ -2,8 +2,8 @@
 
 .tile-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .pyramid-title {
