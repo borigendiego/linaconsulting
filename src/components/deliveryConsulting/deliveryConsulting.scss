@@ -22,6 +22,9 @@
 }
 
 @media (max-width: $xs-screen) {
+  .delivery-container {
+    display: none;
+  }
   .py-title {
     font-size: 1.8rem;
     width: 90%;
