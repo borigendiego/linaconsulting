@@ -30,11 +30,11 @@ function App() {
                     <CaseOfStudies />
                     <Contact />
                 </Route>
-                <Route path={'/about'}>
+                <Route exact path={'/about'}>
                     <Header />
                     <About />
                 </Route>
-                <Route path={'/contact'}>
+                <Route exact path={'/contact'}>
                     <Header />
                     <ContactP />
                 </Route>
