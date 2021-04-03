@@ -5,6 +5,7 @@ import './services.scss'
 import SectionLayout from '../common/SectionLayout/SectionLayout';
 import Tile from './Tile';
 import Pyramid from '../common/Pyramid/Pyramid';
+import MobileCarousel from '../common/mobileCarousel';
 //Constants
 import { SERVICES_TEXT } from './constants';
 //Images
@@ -87,6 +88,7 @@ const Services = () => {
                 <div className={'tile-container'}>
                     {mockData.map((value, index) => <Tile tileData={value} key={index} />)}
                 </div>
+                <MobileCarousel slides={mockData.map((value, index) => <Tile tileData={value} key={index} />)} />
             </SectionLayout>
         </div>
     )

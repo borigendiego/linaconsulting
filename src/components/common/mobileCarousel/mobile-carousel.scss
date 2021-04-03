@@ -1,0 +1,47 @@
+@import '../../../css/variables';
+
+.mobile-carousel_container { display: none; }
+
+@media (max-width: $md-screen) {
+  .mobile-carousel_container {
+    display: initial;
+    padding: 5% 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    .carousel__inner-slide {
+      height: auto;
+      padding: 5%;
+    }
+    //TODO: Refactor this to force the carousel to have the height of the slides
+    li {
+      height: 40vh;
+    }
+  }
+
+  .mobile-carousel_sliders {
+    position: relative;
+    padding-bottom: 20%;
+  }
+
+  .about-paragraphs ,.about-quote { display: none; }
+
+  .arrow {
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    z-index: 1;
+  }
+
+  .arrow[disabled] { display: none; }
+
+  .back {
+    transform: rotate(180deg);
+    left: 0;
+  }
+  .next { right: 0; }
+
+  .arrow, .mobile-carousel_slider-wrapper:focus { outline: none; }
+}
