@@ -11,7 +11,7 @@ import icon3 from '../../assets/images/icon3.png'
 
 export const contactItem = ( text, source, customClassDiv, customClassImg ) => {
     return (
-        <div className={`contact-item ${customClassDiv}`}>
+        <div className={customClassDiv ? `contact-icons_container ${customClassDiv}` : 'contact-icons_container'}>
             <img src={source} alt={source} className={`contact-icon ${customClassImg}`}/>
             {text}
         </div>
