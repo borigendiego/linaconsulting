@@ -37,7 +37,7 @@ const Form = () => {
                         }
                     ]}
                     onSuccessMessage={'Your message has been successfully sent. We will contact you very soon!'}
-                    onErrorMessage={'Please try again or send and email to: bregnier@inspirperformance.com'}
+                    onErrorMessage={'Please try again or send and email to: kamlesh.lad@linaconsulting.com'}
                     submitButtonLabel={'Send Request'}
                     customClass={'lina-contact-form'}
                 />

@@ -1,21 +1,15 @@
 @import '../../css/variables';
 
-.contact-container {
-  background-color: $main-orange;
-}
+.contact-container { background-color: $main-orange; }
 
 .contact-pyramid {
   background-color: $white-color;
   clip-path: $pyramid-empty;
 }
 
-.contact-content {
-  display: flex;
-}
+.contact-content { display: flex; }
 
-.contact-icon {
-  width: 20%;
-}
+.contact-icon { width: 20%; }
 
 .contact-text {
   font-family: $main-font;
@@ -73,6 +67,8 @@
 }
 
 .lina-contact-form {
+  .contact-item { margin: 2% 0; }
+
   .contact-input {
     border: 2px solid #000;
     border-radius: 0;
