@@ -26,7 +26,7 @@ const Contact = () => {
             <div className={'contact-content'}>
                 {contactItem(<p className={'contact-text'}>Melbourne, Australia</p>, icon1)}
                 {contactItem(<p className={'contact-text'}>Monday - Friday<br/>9AM - 5PM</p>, icon2)}
-                {contactItem(<p className={'contact-text'}>Melbourne, Australia</p>, icon3)}
+                {contactItem(<p className={'contact-text'}>kamlesh.lad@linaconsulting.com</p>, icon3)}
             </div>
             <Consultation />
         </div>

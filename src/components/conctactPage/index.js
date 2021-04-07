@@ -21,7 +21,7 @@ const ContactP = () => {
                 <div className={'icons-text'}>
                     {contactItem(<p className={'contact-page-text'}>Melbourne, Australia</p>, icon1, 'contact-page-item', 'contact-page-img')}
                     {contactItem(<p className={'contact-page-text'}>Monday - Friday<br/>9AM - 5PM</p>, icon2, 'contact-page-item', 'contact-page-img')}
-                    {contactItem(<p className={'contact-page-text'}>Melbourne, Australia</p>, icon3, 'contact-page-item', 'contact-page-img')}
+                    {contactItem(<p className={'contact-page-text'}>kamlesh.lad@linaconsulting.com</p>, icon3, 'contact-page-item', 'contact-page-img')}
                 </div>
             </div>
             <Form />

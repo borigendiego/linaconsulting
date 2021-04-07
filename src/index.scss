@@ -14,6 +14,14 @@ li {
   list-style: none;
 }
 
+h1, h2, h3, h6 {
+  font-family: $title-font-family;
+}
+
+p, label {
+  font-family: $text-font-family;
+}
+
 h1 {
   color: $white-color;
   font-size: clamp(30px, 5rem, 64px);
