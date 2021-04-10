@@ -12,8 +12,10 @@
   }
 
   .tile-text {
-    display: block;
+    display: flex;
+    align-items: center;
     text-align: center;
+    height: 80%;
   }
 }
 
