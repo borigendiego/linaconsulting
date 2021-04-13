@@ -26,13 +26,7 @@
   position: relative;
   left: 20%;
 
-  .contact-title {
-    color: $main-blue;
-  }
-
-  .contact-title-one {
-    color: $main-blue;
-  }
+  .contact-title-one, .contact-title { color: $main-blue; }
 }
 
 .contact-page-item {
@@ -42,16 +36,14 @@
 
 .icons-text {
   display: flex;
-  height: 22vh;
+  align-items: center;
 
   .contact-page-text {
     font-family: $main-font;
     text-align: center;
   }
 
-  .contact-page-img {
-    width: 30%;
-  }
+  .contact-page-img { width: 30%; }
 }
 
 .contact-overlay {
@@ -79,36 +71,29 @@
   }
 
   .contact-page-content {
-    width: 70%;
-    height: 60%;
+    width: 100%;
+    padding-top: 10%;
     margin: 0 auto;
   }
 
-  .contact-page-item {
-    justify-content: center;
-  }
+  .contact-page-item { justify-content: center; }
 
   .icons-text {
-    height: auto;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: 7% 0;
 
-    .contact-page-img {
-      width: 60%;
-    }
+    .contact-page-img { width: 60%; }
   }
 
-  .contact-logo-title {
-    top: 25%;
-    font-size: 1rem;
-  }
+  .contact-logo-title { text-align: center; }
+
+  .form-container { width: 100% }
 
   .contact-overlay {
     height: 8vh;
     margin-top: 26%;
 
-    .contact-page-pyramid {
-      display: none;
-    }
+    .contact-page-pyramid { display: none; }
 
     .blue-overlay {
       position: relative;

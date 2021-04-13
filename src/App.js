@@ -31,11 +31,11 @@ function App() {
                     <Contact />
                 </Route>
                 <Route exact path={'/about'}>
-                    <Header />
+                    <Header disableSticky />
                     <About />
                 </Route>
                 <Route exact path={'/contact'}>
-                    <Header />
+                    <Header disableSticky />
                     <ContactP />
                 </Route>
             </Switch>

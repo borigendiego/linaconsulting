@@ -89,4 +89,13 @@
   .header-wrapper.sticky {
     .header-image { height: 6vh; }
   }
+
+  .sticky-disabled {
+    justify-content: space-between;
+    .header-image-wrapper {
+      position: relative;
+      left: 0;
+      .header-image { height: 4vh; }
+    }
+  }
 }

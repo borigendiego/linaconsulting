@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+//Components
 import MobileMenu from './mobile-menu';
 //Constants
 import { HEADER_LINKS } from './constants';
@@ -10,9 +12,9 @@ import {
     Link
 } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ disableSticky }) => {
     return (
-        <nav className={'header-wrapper'}>
+        <nav className={disableSticky ? 'header-wrapper sticky-disabled' : 'header-wrapper'}>
             <div className={'header-image-wrapper'}>
                 <img alt={'logo'} className="header-image" src={logo} />
             </div>
@@ -26,8 +28,6 @@ const Header = () => {
                                     : <Link to={item.linkTo}>{item.label}</Link>
                                 }
                             </li>
-
-
                     )
                 }
             </ul>
@@ -37,7 +37,7 @@ const Header = () => {
                     window.addEventListener('scroll', function() {
                         let header = document.querySelector('nav');
 
-                        if (header) {
+                        if (header && !disableSticky) {
                             header.classList.toggle("sticky", window.scrollY > 0);
                         }
                     })
@@ -45,6 +45,10 @@ const Header = () => {
             </script>
         </nav>
     )
+};
+
+Header.prototypes = {
+    disableSticky: PropTypes.bool,
 };
 
 export default Header;
