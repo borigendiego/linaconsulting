@@ -79,15 +79,13 @@
   }
 }
 
-@media (min-width: $md-screen) {
-  .header-image { height: 22vh; }
-}
+@media (min-width: $md-screen) {  .header-image { height: 22vh; }  }
 
 @media (max-width: $xs-screen) {
   #large-screen-menu { display: none; }
 
   .header-wrapper.sticky {
-    .header-image { height: 6vh; }
+    .header-image { height: 5vh !important; }
   }
 
   .sticky-disabled {
