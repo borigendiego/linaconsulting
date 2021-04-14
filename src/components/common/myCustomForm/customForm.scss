@@ -1,6 +1,8 @@
-
+//Colors
 $red-errors: #cc0017;
 $green-succeed: #33a533;
+//Devices sizes
+$xs-screen: 450px;
 
 .contact-form {
   display: flex;
@@ -57,4 +59,13 @@ $green-succeed: #33a533;
   background-color: #1ec61e40;
   color: $green-succeed;
   border: 2px solid $green-succeed;
+}
+
+@media (max-width: $xs-screen) {
+  .contact-input-button {
+    height: 6vh;
+    width: 50vw;
+    display: block;
+    margin: auto;
+  }
 }
