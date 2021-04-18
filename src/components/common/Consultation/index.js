@@ -10,7 +10,7 @@ const Consultation = () => {
             <div className={'consultation-content'}>
                 <p className={'consultation-text'}>Get a free Consultation</p>
                 <Link to={'/contact'} className={'link-consultation'}>
-                    <p className={'link-text'}>Apply Now</p>
+                    <p style={{textAlign: 'center'}}>Apply Now</p>
                 </Link>
             </div>
         </div>
