@@ -22,9 +22,6 @@ const MyCarousel = ({ slides }) => {
                 totalSlides={slides.length}
             >
                 <div className={'mobile-carousel_sliders'}>
-                    <ButtonBack className={'arrow back'}>
-                        <img alt={'back-arrow'} src={Arrow} />
-                    </ButtonBack>
                     <Slider
                         className={'mobile-carousel_slider-wrapper'}
                     >
@@ -36,6 +33,11 @@ const MyCarousel = ({ slides }) => {
                             )
                         }
                     </Slider>
+                </div>
+                <div className={'arrows-container'}>
+                    <ButtonBack className={'arrow back'}>
+                        <img alt={'back-arrow'} src={Arrow} />
+                    </ButtonBack>
                     <ButtonNext className={'arrow next'}>
                         <img alt={'back-arrow'} src={Arrow} />
                     </ButtonNext>

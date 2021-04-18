@@ -5,23 +5,24 @@
 @media (max-width: $md-screen) {
   .mobile-carousel_container {
     display: initial;
-    padding: 5% 0;
-    position: relative;
-    width: 100%;
-    z-index: 2;
+
     .carousel__inner-slide {
       height: auto;
+      display: contents;
       padding: 5%;
     }
-    //TODO: Refactor this to force the carousel to have the height of the slides
+
     li {
-      height: 45vh;
+      height: auto;
+      padding: 0 1% 0 !important;
     }
   }
 
-  .mobile-carousel_sliders {
-    position: relative;
-    padding-bottom: 20%;
+  .arrows-container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "left center right";
+    grid-template-columns: 1fr 3fr 1fr;
   }
 
   .about-paragraphs ,.about-quote { display: none; }
@@ -29,8 +30,6 @@
   .arrow {
     background: none;
     border: none;
-    position: absolute;
-    bottom: 0;
     width: 40px;
     z-index: 1;
   }
@@ -39,9 +38,9 @@
 
   .back {
     transform: rotate(180deg);
-    left: 0;
+    grid-area: left;
   }
-  .next { right: 0; }
+  .next { grid-area: right; }
 
   .arrow, .mobile-carousel_slider-wrapper:focus { outline: none; }
 }
