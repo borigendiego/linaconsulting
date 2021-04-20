@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-//import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import UnderConstruction from './components/underConstruction';
 
 ReactDOM.render(
   <React.StrictMode>
-   {/* <App />*/}
-   <UnderConstruction />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
