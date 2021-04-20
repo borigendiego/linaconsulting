@@ -1,0 +1,24 @@
+@import '../../../css/variables';
+
+.case-tile-wrapper {
+  width: 70vw;
+  margin: 5% auto;
+  box-shadow: 5px 5px 10px #565656;
+
+  .case-tile-title {
+    background-color: $main-orange;
+    color: $white-color;
+    font-family: $main-font;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .case-tile-text {
+    background-color: $grey-color;
+    font-family: $main-font;
+    text-align: justify;
+    font-size: 0.8rem;
+    padding: 4% 6%;
+  }
+}

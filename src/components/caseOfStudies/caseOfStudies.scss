@@ -1,0 +1,15 @@
+@import '../../css/variables';
+
+.case-mobile {
+  display: none;
+}
+
+@media (max-width: $xs-screen) {
+  .case-carousel-container {
+    display: none;
+  }
+
+  .case-mobile {
+    display: initial;
+  }
+}

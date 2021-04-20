@@ -17,7 +17,7 @@ const Approach = () => {
     const mockData = [
         {
             title: 'Marketing Strategy',
-            text: '',
+            text: 'Our team of professional Graphic Design and Project manager stuff are held to the highest standards.',
             backgroundImage: image1,
         },
         {
@@ -36,26 +36,26 @@ const Approach = () => {
         },
         {
             title: 'Recommendations',
-            text: '',
+            text: 'Our research and analysis are summarise in a proposal for an individual designed campaign that suits your business',
             backgroundImage: image3,
         },
         {
             title: 'Implementation',
-            text: '',
+            text: 'We manage all aspects of the implementations process, including strategic planning, design, procurement, project management testing, training and documentation',
             backgroundImage: image4,
         },
         {
             title: 'Monitoring',
-            text: '',
+            text: "It's part of our job to make sure that your marketing campaign performs at its best as well as being flexible to meet changing demands",
             backgroundImage: image5,
         },
         {
             title: 'Management',
-            text: '',
+            text: 'Our uniquely designed to graphic design, marketing campaigns and project management helps you to reduce cost by delivering high return campaigns with greater efficiency',
             backgroundImage: image6,
         },
     ];
-    return(
+    return (
         <div className={'approach-container'} id={'APPROACH'}>
             <SectionLayout sectionTitle={'Our Approach'} sectionSubTitle={'Our 6 Pillars of a Success Marketing Campaign'} sectionId={'APPROACH'}>
                 <div className={'boxes-container'}>

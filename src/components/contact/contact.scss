@@ -1,34 +1,128 @@
 @import '../../css/variables';
 
-.contact-container {
-  background-color: $main-orange;
-}
+.contact-container { background-color: $main-orange; }
 
 .contact-pyramid {
   background-color: $white-color;
-  clip-path: $pyramid-title;
+  clip-path: $pyramid-empty;
 }
 
 .contact-content {
   display: flex;
+  justify-content: center;
 }
 
-.contact-icon {
-  width: 20%;
-}
+.contact-icon { width: 20%; }
 
 .contact-text {
   font-family: $main-font;
   color: $white-color;
   text-align: center;
-  font-size: 1.2em;
+  font-size: clamp(12px, 1.2em, 20px);
 }
 
-.contact-item {
+.contact-icons_container {
   display: flex;
   flex-direction: column;
-  align-content: center;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 2%;
+  width: calc(100% / 3);
+}
+
+.contact-item { width: 100%; }
+
+.half { width: 50% }
+
+.form-content {
+  .form-item {
+    text-align: left;
+    padding: 1% 0;
+  }
+
+  .form-input {
+    border: 2px solid #000;
+    height: 5vh;
+    width: 100%;
+    padding-left: 1%;
+  }
+
+  .half { width: 49%; }
+
+  .left { margin-right: 2%; }
+
+  .text-box {
+    height: 20vh;
+    padding-top: 1%;
+  }
+
+  .form-button {
+    padding: 1.5% 2%;
+    color: $main-orange;
+    background-color: $main-blue;
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $main-orange;
+      color: $main-blue;
+      cursor: pointer;
+    }
+  }
+}
+
+.lina-contact-form {
+  .contact-item { margin: 2% 0; }
+
+  .contact-input {
+    border: 2px solid #000;
+    border-radius: 0;
+    height: 5vh;
+    padding-left: 1%;
+  }
+
+  textarea {
+    border: 2px solid #000;
+    border-radius: 0;
+    padding-left: 1%;
+  }
+
+  .contact-input-button {
+    padding: 1.5% 2%;
+    color: $main-orange;
+    background-color: $main-blue;
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $main-orange;
+      color: $main-blue;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .form-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .form-content {
+    width: 100%;
+
+    .form-button {
+      padding: 3%;
+      margin-bottom: 5%;
+    }
+    .half { width: 100%; }
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .contact-icon{ width: 40%; }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+  }
 }

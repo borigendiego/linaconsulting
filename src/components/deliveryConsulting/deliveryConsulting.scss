@@ -1,8 +1,7 @@
 @import '../../css/variables';
 
 .delivery-container {
-  height: 70vh;
-  margin: 7% 0;
+  height: 75vh;
   position: relative;
 }
 
@@ -20,4 +19,15 @@
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+@media (max-width: $xs-screen) {
+  .delivery-container {
+    display: none;
+  }
+  .py-title {
+    font-size: 1.8rem;
+    width: 90%;
+    margin: 10% auto;
+  }
 }

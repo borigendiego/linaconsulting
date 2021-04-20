@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 //css
 import './boxes.scss';
 
 const Box = (props) => {
     const { title, text, backgroundImage } = props.boxData;
+
+    const [isHover, setIsHover] = useState(false);
 
     const boxStyle = {
         backgroundImage: `url(${backgroundImage})`,
@@ -12,7 +14,12 @@ const Box = (props) => {
     };
 
     return(
-        <div className={'box'} style={boxStyle}>
+        <div
+            className={ isHover ? 'box box-hover' : 'box'}
+            style={boxStyle}
+            onMouseEnter={() => setIsHover(true)}
+            onMouseLeave={() => setIsHover(false)}
+        >
             <div className={'box-content'}>
                 <h2 className={'box-title'}>{title}</h2>
                 <p className={'box-text'}>{text}</p>

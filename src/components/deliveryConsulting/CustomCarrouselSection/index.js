@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './customCarousel.scss';
 import {
     CarouselProvider,
     Slider,
@@ -9,11 +8,12 @@ import {
     DotGroup,
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
+//Styles
+import './customCarousel.scss';
+//Icon
 import arrow from '../../../assets/images/atras.svg'
 
-const CustomCarouselSection = (props) => {
-    const { data } = props;
+const CustomCarouselSection = ({ data }) => {
     const [currentItem, setCurrentItem] = useState(0);
 
     return (
@@ -21,7 +21,7 @@ const CustomCarouselSection = (props) => {
             <CarouselProvider
                 naturalSlideWidth={200}
                 naturalSlideHeight={125}
-                totalSlides={3}
+                totalSlides={data.length}
                 className={'carousel-container'}
             >
                 <div className={'sliders'}>
@@ -29,14 +29,16 @@ const CustomCarouselSection = (props) => {
                         className={'arrow-button back'}
                         onClick={() => setCurrentItem(currentItem - 1)}
                     >
-                        <img src={arrow} />
+                        <img alt={'back-arrow'} src={arrow} />
                     </ButtonBack>
                     <Slider
                         className={'slider-wrapper'}
                     >
                         {
                             data.map((item, index) =>
-                                <Slide key={item.id} index={index}><img src={item.image} /></Slide>
+                                <Slide key={item.id} index={index}>
+                                    <img alt={item.title} src={item.image} />
+                                </Slide>
                             )
                         }
                     </Slider>
@@ -44,7 +46,7 @@ const CustomCarouselSection = (props) => {
                         className={'arrow-button next'}
                         onClick={() => setCurrentItem(currentItem + 1)}
                     >
-                        <img src={arrow} />
+                        <img alt={'next-arrow'} src={arrow} />
                     </ButtonNext>
                 </div>
                 <DotGroup className={'dots-container'} />

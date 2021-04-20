@@ -4,7 +4,6 @@ import './about.scss';
 //constants
 import {ABOUT_TEXT_ONE, ABOUT_TEXT_TWO} from './constants';
 //icon
-import logo from '../../assets/images/logo.png';
 import Consultation from '../common/Consultation';
 
 const About = () => {

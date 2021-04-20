@@ -1,20 +1,22 @@
 @import '../../../css/variables';
 
+//TODO: Why are we using a class instead of css hover?
+.box-hover {
+  background-color: $main-orange;
+  background-image: none;
+
+  .box-text {
+    display: block;
+  }
+}
+
 .box {
   display: grid;
-  padding: 20px;
+  padding: 5%;
   place-items: center;
   text-align: center;
+  min-height: 20vh;
   transition: 0.5s;
-
-  &:hover {
-    background-color: $main-orange;
-    background-image: none;
-
-    .box-text {
-      display: block;
-    }
-  }
 
   &:nth-child(1){
     grid-column: span 2;
@@ -40,6 +42,11 @@
     grid-column: span 2;
     grid-row: span 1;
   }
+}
+
+.box:hover {
+  background-image: none !important;
+  background-color: #feca1f;
 }
 
 .box-title {

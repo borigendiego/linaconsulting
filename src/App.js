@@ -12,9 +12,9 @@ import DeliveryConsulting from './components/deliveryConsulting';
 import Approach from './components/approach';
 import Contact from './components/contact';
 import About from './components/about';
-import Consultation from './components/common/Consultation';
+//import Consultation from './components/common/Consultation';
 import ContactP from './components/conctactPage';
-
+import CaseOfStudies from './components/caseOfStudies';
 
 function App() {
   return (
@@ -27,14 +27,15 @@ function App() {
                     <Services />
                     <DeliveryConsulting />
                     <Approach />
+                    <CaseOfStudies />
                     <Contact />
                 </Route>
-                <Route path={'/about'}>
-                    <Header />
+                <Route exact path={'/about'}>
+                    <Header disableSticky />
                     <About />
                 </Route>
-                <Route path={'/contact'}>
-                    <Header />
+                <Route exact path={'/contact'}>
+                    <Header disableSticky />
                     <ContactP />
                 </Route>
             </Switch>

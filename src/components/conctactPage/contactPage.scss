@@ -1,35 +1,32 @@
 @import '../../css/variables';
 
 .contact-page {
-  display: flex;
-  background-color: $white-color;
-  height: 90vh;
-  padding-top: 12vh;
+  display: inline-flex;
+  position: relative;
+  min-height: 100vh;
+  padding-top: 7%;
+  flex-wrap: wrap;
 }
 
 .contact-page-content {
   display: flex;
   flex-wrap: wrap;
-  width: 45%;
-  height: 90%;
+  width: 50%;
+}
+
+.form-container {
+  padding: 2% 5%;
+  width: 50%;
 }
 
 .contact-logo-title {
-  display: flex;
+  display: inline-block;
+  font-family: $title-font-family;
+  text-align: right;
+  position: relative;
+  left: 20%;
 
-  .contact-title {
-    display: flex;
-    font-family: $title-font-family;
-    color: $main-blue;
-    width: 54%;
-    justify-content: flex-end;
-  }
-
-  .contact-title-one {
-    font-family: $title-font-family;
-    color: $main-blue;
-    font-size: 4rem;
-  }
+  .contact-title-one, .contact-title { color: $main-blue; }
 }
 
 .contact-page-item {
@@ -37,20 +34,72 @@
   width: 30%;
 }
 
-.contact-page-img {
-  width: 15%;
-}
-
 .icons-text {
   display: flex;
-  height: 22vh;
+  align-items: center;
+  justify-content: center;
 
   .contact-page-text {
     font-family: $main-font;
     text-align: center;
   }
 
-  .contact-page-img {
-    width: 25%;
+  .contact-page-img { width: 30%; }
+}
+
+.contact-overlay {
+  background-color: $main-orange;
+  width: 100%;
+
+  .contact-page-pyramid {
+    background-color: $white-color;
+    clip-path: $pyramid-empty;
+    height: 25vh;
+  }
+
+  .blue-overlay {
+    background-color: $main-blue;
+    height: 5vh;
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .contact-page {
+    display: block;
+    margin: 0 auto;
+    height: 80vh;
+    padding: 0;
+  }
+
+  .contact-page-content {
+    width: 100%;
+    padding-top: 10%;
+    margin: 0 auto;
+  }
+
+  .contact-page-item { justify-content: center; }
+
+  .icons-text {
+    flex-direction: column;
+    margin: 7% 0;
+
+    .contact-page-img { width: 60%; }
+  }
+
+  .contact-logo-title { text-align: center; }
+
+  .form-container { width: 100% }
+
+  .contact-overlay {
+    height: 8vh;
+    margin-top: 26%;
+
+    .contact-page-pyramid { display: none; }
+
+    .blue-overlay {
+      position: relative;
+      top: 4vh;
+      height: 4vh;
+    }
   }
 }
