@@ -7,7 +7,10 @@
   clip-path: $pyramid-empty;
 }
 
-.contact-content { display: flex; }
+.contact-content {
+  display: flex;
+  justify-content: center;
+}
 
 .contact-icon { width: 20%; }
 

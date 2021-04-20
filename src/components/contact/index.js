@@ -5,9 +5,8 @@ import './contact.scss';
 import Pyramid from '../common/Pyramid/Pyramid';
 import Consultation from '../common/Consultation';
 //Icons
-import icon1 from '../../assets/images/icon1.png'
-import icon2 from '../../assets/images/icon2.png'
-import icon3 from '../../assets/images/icon3.png'
+import icon1 from '../../assets/images/icon1.png';
+import icon2 from '../../assets/images/icon2.png';
 
 export const contactItem = ( text, source, customClassDiv, customClassImg ) => {
     return (
@@ -19,14 +18,12 @@ export const contactItem = ( text, source, customClassDiv, customClassImg ) => {
 };
 
 const Contact = () => {
-
-    return(
+    return (
         <div className={'contact-container'} id={'CONTACT'}>
             <Pyramid customClass={'contact-pyramid'}/>
             <div className={'contact-content'}>
                 {contactItem(<p className={'contact-text'}>Melbourne, Australia</p>, icon1)}
                 {contactItem(<p className={'contact-text'}>Monday - Friday<br/>9AM - 5PM</p>, icon2)}
-                {contactItem(<p className={'contact-text'}>kamlesh.lad@linaconsulting.com</p>, icon3)}
             </div>
             <Consultation />
         </div>
