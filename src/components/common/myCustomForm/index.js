@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import emailjs from 'emailjs-com';
+import axios from 'axios';
 //Hook
 import useContactForm from './useContactForm';
 //Component
@@ -27,7 +28,22 @@ const MyCustomForm = ({ fields, onSuccessMessage, onErrorMessage, customClass, s
         initialValues,
         fields,
         onSubmit: (form) => {
-            //TODO: Move emails sender to a proper API
+            axios.post(
+                'https://thehippoapi.netlify.app/.netlify/functions/api/mail',
+                {
+                    projectEmail: ['borigendiego@gmail.com'],
+                    subject: 'My first test email',
+                    message: 'Este es el mail posta'
+                    },
+            {headers: {'Content-Type': 'application/json'}}
+                )
+                .then(function (response) {
+                    console.log(response);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+            /*//TODO: Move emails sender to a proper API
             emailjs.sendForm(
                 process.env.REACT_APP_MAIL_VALUE,
                 process.env.REACT_APP_TEMPLATE_ID,
@@ -38,7 +54,7 @@ const MyCustomForm = ({ fields, onSuccessMessage, onErrorMessage, customClass, s
                 }, (error) => {
                     console.log(error.text);
                     setMessageSent('error');
-                });
+                });*/
         }
     });
 
