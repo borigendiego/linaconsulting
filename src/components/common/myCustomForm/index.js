@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import emailjs from 'emailjs-com';
 import axios from 'axios';
 //Hook
 import useContactForm from './useContactForm';
@@ -10,7 +9,7 @@ import MyInput from './CustomInput';
 import './customForm.scss';
 
 const MyCustomForm = ({ fields, onSuccessMessage, onErrorMessage, customClass, submitButtonLabel }) => {
-    const [messageSent, setMessageSent] = useState('');
+    const [messageSent] = useState('');
     const initialValues = {
         name: '',
         mail: '',
@@ -22,7 +21,6 @@ const MyCustomForm = ({ fields, onSuccessMessage, onErrorMessage, customClass, s
         values,
         handleChange,
         errors,
-        setValues,
         handleSubmit,
     } = useContactForm({
         initialValues,
