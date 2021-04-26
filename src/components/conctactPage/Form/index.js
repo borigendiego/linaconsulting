@@ -19,7 +19,7 @@ const Form = () => {
                             validations: [required],
                         },
                         {
-                            name: 'mail',
+                            name: 'customerEmail',
                             type: 'text',
                             label: 'Email (Required)',
                             size: 'half',

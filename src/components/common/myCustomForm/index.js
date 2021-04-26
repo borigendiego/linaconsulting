@@ -9,7 +9,7 @@ import MyInput from './CustomInput';
 import './customForm.scss';
 
 const MyCustomForm = ({ fields, onSuccessMessage, onErrorMessage, customClass, submitButtonLabel }) => {
-    const [messageSent] = useState('');
+    const [messageSent, setMessageSent] = useState('');
     const initialValues = {
         name: '',
         mail: '',
@@ -22,37 +22,34 @@ const MyCustomForm = ({ fields, onSuccessMessage, onErrorMessage, customClass, s
         handleChange,
         errors,
         handleSubmit,
+        setValues,
     } = useContactForm({
         initialValues,
         fields,
-        onSubmit: (form) => {
+        onSubmit: () => {
             axios.post(
-                'https://thehippoapi.netlify.app/.netlify/functions/api/mail',
+                'https://thehippoapi.netlify.app/.netlify/functions/api/linaconsulting-mail',
                 {
-                    projectEmail: ['borigendiego@gmail.com'],
-                    subject: 'My first test email',
-                    message: 'Este es el mail posta'
+                    subject: values.subject,
+                    message: values.message,
+                    name: values.name,
+                    customerEmail: values.customerEmail,
                     },
-            {headers: {'Content-Type': 'application/json'}}
+            {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'accept': 'application/json, text/plain, */*',
+                    },
+                }
                 )
                 .then(function (response) {
-                    console.log(response);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
-            /*//TODO: Move emails sender to a proper API
-            emailjs.sendForm(
-                process.env.REACT_APP_MAIL_VALUE,
-                process.env.REACT_APP_TEMPLATE_ID,
-                form, process.env.REACT_APP_USER_ID)
-                .then(() => {
                     setValues(initialValues);
                     setMessageSent('succeed');
-                }, (error) => {
-                    console.log(error.text);
+                })
+                .catch(function (error) {
+                    console.log(">>Error", error);
                     setMessageSent('error');
-                });*/
+                });
         }
     });
 
