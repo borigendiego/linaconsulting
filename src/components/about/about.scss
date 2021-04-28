@@ -2,39 +2,27 @@
 
 .about-section {
   background-image: url('../../assets/images/about-us-image.jpg');
-  background-size: cover;
+  background-position-x: 20vw;
 }
 
-.about-content {
-  width: 25%;
-  text-align: justify;
-  margin-left: 10%;
-  padding-top: 14vh;
-
-}
-
-.logo-title {
-  display: flex;
-  flex-wrap: wrap;
+.about-text_container {
+  width: 45%;
+  padding: 2% 3%;
+  background-color: #f0f8ffc9;
   position: relative;
-  bottom: 1rem;
+  bottom: 10%;
 }
+
 
 .about-title {
-  font-family: $title-font-family;
-  display: flex;
-  align-items: flex-end;
-  margin-left: 1%;
-  font-size: 3.5rem;
-  justify-content: flex-end;
-  width: 84%;
-  color: $main-blue;
+  margin: 10% 0;
 }
 
-.about-title-one {
+.about-title h1 {
   font-family: $title-font-family;
-  font-size: 3rem;
   color: $main-blue;
+  text-align: right;
+  font-size: clamp(20px, 4vw, 40px);
 }
 
 .about-title-two {
@@ -57,11 +45,12 @@
     padding-top: 50%;
   }
 
-  .logo-title {
+  .about-title, .logo-title {
     display: inline;
   }
 
-  .about-title {
-    display: inline;
+  .about-text_container {
+    width: 90%;
+    margin: auto;
   }
 }

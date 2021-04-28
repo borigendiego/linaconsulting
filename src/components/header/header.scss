@@ -20,7 +20,7 @@
     position: relative;
     .header-image {
       transition: all 600ms;
-      height: 10vh;
+      width: 30%;
     }
   }
 }
@@ -28,6 +28,8 @@
 .header-image-wrapper {
   left: 8%;
   position: absolute;
+  width: 180px;
+  max-width: 18vw;
 }
 
 #large-screen-menu {
@@ -78,12 +80,14 @@
     }
   }
 }
+.header-image { width: 100%; }
 
-@media (min-width: $md-screen) {  .header-image { height: 22vh; }  }
+@media (max-width: $md-screen) {
+  #large-screen-menu { display: none; }
+  .header-image-wrapper { max-width: 130px; }
+}
 
 @media (max-width: $xs-screen) {
-  #large-screen-menu { display: none; }
-
   .header-wrapper.sticky {
     .header-image { height: 5vh !important; }
   }

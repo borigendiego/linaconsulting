@@ -8,9 +8,7 @@ import { HEADER_LINKS } from './constants';
 import './header.scss';
 //Images
 import logo from '../../assets/images/logo.png';
-import {
-    Link
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = ({ disableSticky }) => {
     return (

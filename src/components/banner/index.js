@@ -12,7 +12,7 @@ const Banner = () => {
             </div>
             <p className={'banner-text'}>
                 GRAPHIC DESIGN AND DIGITAL PROJECT
-                MANAGMENT CONSULTING TO DELIVER
+                MANAGEMENT CONSULTING TO DELIVER
                 YOUR BUSINESS NEEDS.
             </p>
         </div>
