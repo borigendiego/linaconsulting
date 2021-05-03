@@ -47,8 +47,22 @@
   .contact-page-img { width: 30%; }
 }
 
-.contact-overlay {
+.contact-overlay_yellow-figure {
+  clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
   background-color: $main-orange;
+  height: 100%;
+}
+
+.contact-overlay_blue-line {
+  position: relative;
+  bottom: 20%;
+  width: 100%;
+  height: 20%;
+  background-color: $main-blue;
+}
+
+.contact-overlay {
+  position: relative;
   width: 100%;
 
   .contact-page-pyramid {

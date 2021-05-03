@@ -12,7 +12,7 @@ const MyCustomForm = ({ fields, onSuccessMessage, onErrorMessage, customClass, s
     const [messageSent, setMessageSent] = useState('');
     const initialValues = {
         name: '',
-        mail: '',
+        customerEmail: '',
         subject: '',
         message: '',
     };

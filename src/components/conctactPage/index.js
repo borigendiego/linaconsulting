@@ -24,8 +24,8 @@ const ContactP = () => {
             </div>
             <Form />
             <div className={'contact-overlay'}>
-                <Pyramid customClass={'contact-page-pyramid'}/>
-                <div className={'blue-overlay'} />
+                <div className={'contact-overlay_yellow-figure'} />
+                <div className={'contact-overlay_blue-line'} />
             </div>
         </div>
     )
