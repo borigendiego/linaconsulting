@@ -11,6 +11,16 @@ import logo from '../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 
 const Header = ({ disableSticky }) => {
+    const headerLinks = () => HEADER_LINKS.map((item) =>
+        <li key={item.label} className={'nav-element'}>
+            {
+                item.isAnchor
+                ? <a href={item.linkTo}>{item.label}</a>
+                : <Link to={item.linkTo}>{item.label}</Link>
+            }
+        </li>
+    )
+
     return (
         <nav className={disableSticky ? 'header-wrapper sticky-disabled' : 'header-wrapper'}>
             <div className={'header-image-wrapper'}>
@@ -18,18 +28,10 @@ const Header = ({ disableSticky }) => {
             </div>
             <ul className={'nav-menu'} id={'large-screen-menu'}>
                 {
-                    HEADER_LINKS.map((item) =>
-                            <li key={item.label} className={'nav-element'}>
-                                {
-                                item.isAnchor
-                                    ? <a href={item.linkTo}>{item.label}</a>
-                                    : <Link to={item.linkTo}>{item.label}</Link>
-                                }
-                            </li>
-                    )
+                   headerLinks()
                 }
             </ul>
-            <MobileMenu menuItems={HEADER_LINKS} />
+            <MobileMenu menuItems={headerLinks} />
             <script type={'text/javascript'}>
                 {
                     window.addEventListener('scroll', function() {
