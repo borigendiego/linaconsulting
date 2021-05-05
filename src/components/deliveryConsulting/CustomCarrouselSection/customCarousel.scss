@@ -61,13 +61,9 @@
   width: 8em;
 }
 
-.arrow-button[disabled] {
-  visibility: hidden;
-}
+.arrow-button[disabled] { visibility: hidden; }
 
-.arrow-button.next {
-  transform: rotate(180deg);
-}
+.arrow-button.next { transform: rotate(180deg); }
 
 .dots-container {
   display: flex;
@@ -80,7 +76,5 @@
     width: 20px;
   }
 
-  .carousel__dot--selected {
-    background-color: black;
-  }
+  .carousel__dot--selected { background-color: black; }
 }

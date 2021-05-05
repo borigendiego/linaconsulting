@@ -5,18 +5,17 @@
   background-color: $main-orange;
   background-image: none;
 
-  .box-text {
-    display: block;
-  }
+  .box-text { display: block; }
 }
 
 .box {
   display: grid;
-  padding: 5%;
+  padding: 3%;
   place-items: center;
   text-align: center;
   min-height: 20vh;
   transition: 0.5s;
+  box-sizing: content-box;
 
   &:nth-child(1){
     grid-column: span 2;
@@ -54,7 +53,7 @@
 }
 
 .box-text {
-  font-family: $main-font;
+  font-size: clamp(12px, 0.9rem, 16px);
   display: none;
   color: $white-color;
 }
