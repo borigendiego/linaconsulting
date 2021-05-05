@@ -61,6 +61,10 @@
   width: 8em;
 }
 
+.arrow-button[disabled] {
+  visibility: hidden;
+}
+
 .arrow-button.next {
   transform: rotate(180deg);
 }

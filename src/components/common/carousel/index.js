@@ -36,7 +36,7 @@ const Carousel = ({ carouselData }) => {
                                 style={{backgroundImage: `url(${item.image})`}}
                                 className={'simple-carouse_slide'}
                             >
-                                <h2 className={'simple-carouse_slide_title'}>{item.title}</h2>
+                                <h4 className={'simple-carouse_slide_title'}>{item.title}</h4>
                                 <p className={'simple-carouse_slide_text'}>{item.text}</p>
                             </Slide>
                         )

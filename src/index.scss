@@ -14,7 +14,7 @@ li {
   list-style: none;
 }
 
-h1, h2, h3, h6 {
+h1, h2, h3, h4, h6 {
   font-family: $title-font-family;
 }
 
@@ -29,6 +29,10 @@ h1 {
 
 h3 {
   font-size: clamp(18px, 1.5rem, 24px);
+}
+
+h4 {
+  font-size: clamp(18px, 1.3rem, 20px);
 }
 
 p {
@@ -51,10 +55,4 @@ a {
   position: relative;
   left: calc(100vw - 92%);
   top: 12%;
-}
-
-@media (max-width: $md-screen) {
-  .page-title {
-
-  }
 }
