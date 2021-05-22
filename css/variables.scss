@@ -1,0 +1,55 @@
+@import url(//db.onlinewebfonts.com/c/89d8fba73b6d10c300478fad02d4871d?family=Touche);
+@import url(//db.onlinewebfonts.com/c/e47842169b17674250d3f8ed52cf53f8?family=Touche);
+
+//Colors
+$sections-background-color: #e4e4e4;
+$mobile-menu-background-color: #e4e4e4e6;
+$sections-border-color: #000;
+$white-color: #ffff;
+$grey-color: rgb(220, 220, 220);
+$basic-font-color: rgba(0, 0, 0, 0.7);
+$main-orange: rgb(254 ,202 ,31);
+$main-blue: rgb(0, 0, 83);
+
+//Devices sizes
+$xs-screen: 450px;
+$md-screen: 700px;
+$lg-screen: 1024px;
+
+//Fonts
+$title-font-family: "Touche-semibold", Arial, sans-serif;
+$text-font-family: "Touche-regular", Arial, sans-serif;
+$main-font: Arial, sans-serif;
+
+//Pyramid sizes
+$pyramid-title-text: polygon(100% 0, 100% 64%, 50% 90%, 0 64%, 0 0);
+$pyramid-title: polygon(100% 0, 100% 8%, 50% 55%, 0 8%, 0 0);
+$pyramid-empty: polygon(100% 0, 100% 38%, 50% 85%, 0 38%, 0 0);
+
+@font-face {
+  font-family: "Touche-regular";
+  src: url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.eot");
+  src: url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.svg#Touche") format("svg");
+}
+
+@font-face {
+  font-family: "Touche-semibold";
+  src: url("//db.onlinewebfonts.com/t/e47842169b17674250d3f8ed52cf53f8.eot");
+  src: url("//db.onlinewebfonts.com/t/e47842169b17674250d3f8ed52cf53f8.eot?#iefix")
+  format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/e47842169b17674250d3f8ed52cf53f8.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/e47842169b17674250d3f8ed52cf53f8.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/e47842169b17674250d3f8ed52cf53f8.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/e47842169b17674250d3f8ed52cf53f8.svg#Touche") format("svg");
+}
+
+/*@font-face {
+  font-family: 'Gotham light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Gotham-Light.otf');
+}*/
