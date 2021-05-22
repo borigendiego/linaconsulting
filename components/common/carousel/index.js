@@ -9,9 +9,9 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 //Styles
-import './simpleCarousel.scss';
+import styles from './simpleCarousel.module.scss';
 //Icons
-import arrow from '../../../assets/images/atras.svg';
+import arrow from '../../../public/assets/images/atras.svg';
 
 const Carousel = ({ carouselData }) => {
     return (
@@ -20,24 +20,24 @@ const Carousel = ({ carouselData }) => {
             naturalSlideHeight={80}
             totalSlides={6}
             visibleSlides={3}
-            className={'simple-carousel-container'}
+            className={styles.simpleCarouselContainer}
         >
-            <div className={'simple-carousel-wrapper'}>
+            <div className={styles.simpleCarouselWrapper}>
                 <ButtonBack className={'arrow-button back'}>
                     <img alt={'left-arrow'} src={arrow} />
                 </ButtonBack>
 
-                <Slider className={'simple-carousel_slider'}>
+                <Slider className={styles.simpleCarousel_slider}>
                     {
                         carouselData.map((item, index) =>
                             <Slide
                                 key={item.id}
                                 index={index}
                                 style={{backgroundImage: `url(${item.image})`}}
-                                className={'simple-carouse_slide'}
+                                className={styles.simpleCarouse_slide}
                             >
-                                <h4 className={'simple-carouse_slide_title'}>{item.title}</h4>
-                                <p className={'simple-carouse_slide_text'}>{item.text}</p>
+                                <h4 className={styles.simpleCarouse_slide_title}>{item.title}</h4>
+                                <p className={styles.simpleCarouse_slide_text}>{item.text}</p>
                             </Slide>
                         )
                     }

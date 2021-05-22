@@ -3,7 +3,7 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 //Css
-import './carousel.scss';
+import './carousel.module.scss';
 //Images
 import image1 from '../../../assets/images/consulting/deliveryServices1.jpg';
 import image2 from '../../../assets/images/consulting/deliveryServices2.jpg';

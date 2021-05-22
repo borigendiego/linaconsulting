@@ -8,14 +8,14 @@ import {
     ButtonNext,
 } from 'pure-react-carousel';
 //Styles
-import './mobile-carousel.scss';
+import styles from './mobile-carousel.module.scss';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 //Icons
 import Arrow from './assets/right-arrow.svg';
 
 const MyCarousel = ({ slides }) => {
     return (
-        <div className={'mobile-carousel_container'}>
+        <div className={styles.mobileCarousel_container}>
             <CarouselProvider
                 naturalSlideWidth={200}
                 naturalSlideHeight={110}

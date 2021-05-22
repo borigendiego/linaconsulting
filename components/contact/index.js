@@ -1,12 +1,12 @@
 import React from 'react';
 //Css
-import './contact.scss';
+import './contact.module.scss';
 //Components
 import Pyramid from '../common/Pyramid/Pyramid';
 import Consultation from '../common/Consultation';
 //Icons
-import icon1 from '../../assets/images/icon1.png';
-import icon2 from '../../assets/images/icon2.png';
+import icon1 from '../../public/assets/images/icon1.png';
+import icon2 from '../../public/assets/images/icon2.png';
 
 export const contactItem = ( text, source, customClassDiv, customClassImg ) => {
     return (

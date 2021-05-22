@@ -5,10 +5,10 @@ $lg-screen: 1024px;
 
 //Hide menu for medium screen and higher
 @media (min-width: $md-screen) {
-  #menuToggle { display: none !important; }
+  .toggle { display: none !important; }
 }
 
-#menuToggle {
+.toggle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,14 +22,14 @@ $lg-screen: 1024px;
   user-select: none;
 }
 
-#menuToggle a {
+.toggle a {
   text-decoration: none;
   color: #232323;
   transition: color 0.3s ease;
 }
 
 // Hide button that will trigger the toggle to open and close the menu
-#menuToggle input {
+.toggle input {
   position: absolute;
   cursor: pointer;
   opacity: 0; /* hide this */
@@ -43,7 +43,7 @@ $lg-screen: 1024px;
 /*
  * Hamburger menu
  */
-#menuToggle span {
+.toggle span {
   background: #cdcdcd;
   height: 25%;
   border-radius: 3px;
@@ -54,15 +54,15 @@ $lg-screen: 1024px;
   opacity 0.55s ease;
 }
 
-#menuToggle span:first-child { transform-origin: 0 0; }
+.toggle span:first-child { transform-origin: 0 0; }
 
-#menuToggle span:nth-last-child(2) { transform-origin: 0 100%; }
+.toggle span:nth-last-child(2) { transform-origin: 0 100%; }
 
 /*
  * Transform all the slices of hamburger
  * into a cross.
  */
-#menuToggle input:checked ~ span {
+.toggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #ffffff;
@@ -71,7 +71,7 @@ $lg-screen: 1024px;
 /*
  * Hide the middle line one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3) {
+.toggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -79,10 +79,10 @@ $lg-screen: 1024px;
 /*
  * Rotate line direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2) { transform: rotate(-45deg) translate(-1px, -1px); }
+.toggle input:checked ~ span:nth-last-child(2) { transform: rotate(-45deg) translate(-1px, -1px); }
 
 // Actual menu with the options
-#menu {
+.menu {
   position: absolute;
   top: -100%;
   left: 70%;
@@ -95,7 +95,7 @@ $lg-screen: 1024px;
   transition: all 500ms;
 }
 
-#menu li {
+.menu li {
   padding: 5% 0;
   font-size: clamp(100%, 5vw, 24px);
   transition: all 150ms;
@@ -105,7 +105,7 @@ $lg-screen: 1024px;
 /*
  * Make slide came from right
  */
-#menuToggle input:checked ~ #menu {
+.toggle input:checked ~ .menu {
   background-color: hsla(0,0%,89.4%,.901961);
   transform: translate(-90%, 0);
 }

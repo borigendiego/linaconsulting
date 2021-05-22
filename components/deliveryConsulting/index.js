@@ -3,13 +3,13 @@ import React from 'react';
 import Pyramid from '../common/Pyramid/Pyramid';
 import MyCarousel from './CustomCarrouselSection'
 //Css
-import './deliveryConsulting.scss';
+import './deliveryConsulting.module.scss';
 //Constants
-import image1 from '../../assets/images/consulting/deliveryServices1.jpg'
-import image2 from '../../assets/images/consulting/deliveryServices2.jpg'
-import image3 from '../../assets/images/consulting/deliveryServices3.jpg'
-import image4 from '../../assets/images/consulting/deliveryServices4.jpg'
-import image5 from '../../assets/images/consulting/deliveryServices5.jpg'
+import image1 from '../../public/assets/images/consulting/deliveryServices1.jpg';
+import image2 from '../../public/assets/images/consulting/deliveryServices2.jpg';
+import image3 from '../../public/assets/images/consulting/deliveryServices3.jpg';
+import image4 from '../../public/assets/images/consulting/deliveryServices4.jpg';
+import image5 from '../../public/assets/images/consulting/deliveryServices5.jpg';
 
 const DATA = [
     {

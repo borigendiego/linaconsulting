@@ -3,17 +3,16 @@ import React from 'react';
 import SectionLayout from '../common/SectionLayout/SectionLayout';
 import Box from './boxes';
 //Css
-import './approach.scss';
+import styles from  './approach.module.scss';
 //Images
-import image1 from '../../assets/images/approach1.jpeg'
-import image2 from '../../assets/images/approach1.jpeg'
-import image3 from '../../assets/images/approach3.jpeg'
-import image4 from '../../assets/images/approach4.jpg'
-import image5 from '../../assets/images/approach5.jpeg'
-import image6 from '../../assets/images/approach6.jpeg'
+import image1 from '../../public/assets/images/approach1.jpeg';
+import image2 from '../../public/assets/images/approach1.jpeg';
+import image3 from '../../public/assets/images/approach3.jpeg';
+import image4 from '../../public/assets/images/approach4.jpg';
+import image5 from '../../public/assets/images/approach5.jpeg';
+import image6 from '../../public/assets/images/approach6.jpeg';
 
 const Approach = () => {
-
     const mockData = [
         {
             title: 'Marketing Strategy',
@@ -55,10 +54,15 @@ const Approach = () => {
             backgroundImage: image6,
         },
     ];
+
     return (
-        <div className={'approach-container'} id={'APPROACH'}>
-            <SectionLayout sectionTitle={'Our Approach'} sectionSubTitle={'Our 6 Pillars of a Success Marketing Campaign'} sectionId={'APPROACH'}>
-                <div className={'boxes-container'}>
+        <div id={'APPROACH'}>
+            <SectionLayout
+                sectionTitle={'Our Approach'}
+                sectionSubTitle={'Our 6 Pillars of a Success Marketing Campaign'}
+                sectionId={'APPROACH'}
+            >
+                <div className={styles.boxesContainer}>
                     {mockData.map((value, index) => <Box key={value.title} boxData={value} />)}
                 </div>
             </SectionLayout>

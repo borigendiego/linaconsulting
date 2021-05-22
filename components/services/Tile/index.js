@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //css
-import './tile.scss';
+import './tile.module.scss';
 
 
 const Tile = ({ tileData }) => {

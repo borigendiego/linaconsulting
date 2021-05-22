@@ -1,11 +1,10 @@
-
 //Images
-import image1 from '../../assets/images/CoS/CoS-1.jpg';
-import image2 from '../../assets/images/CoS/CoS-2.jpg';
-import image3 from '../../assets/images/CoS/CoS-3.jpg';
-import image4 from '../../assets/images/CoS/CoS-4.jpg';
-import image5 from '../../assets/images/CoS/CoS-5.jpg';
-import image6 from '../../assets/images/CoS/CoS-6.jpg';
+import image1 from '../../public/assets/images/CoS/CoS-1.jpg';
+import image2 from '../../public/assets/images/CoS/CoS-2.jpg';
+import image3 from '../../public/assets/images/CoS/CoS-3.jpg';
+import image4 from '../../public/assets/images/CoS/CoS-4.jpg';
+import image5 from '../../public/assets/images/CoS/CoS-5.jpg';
+import image6 from '../../public/assets/images/CoS/CoS-6.jpg';
 
 export const CAROUSEL_DATA = [
     {

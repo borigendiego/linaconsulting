@@ -1,7 +1,7 @@
 import React from 'react';
 import ConstructionIcon from '../../assets/icons/construction-icon.png';
 //Style
-import './underConstruction.scss'
+import './underConstruction.module.scss'
 
 const UnderConstructionPage = () => {
     return (

@@ -5,44 +5,42 @@ import MobileMenu from './mobile-menu';
 //Constants
 import { HEADER_LINKS } from './constants';
 //Styles
-import './header.scss';
+import styles from './header.module.scss';
 //Images
-import logo from '../../assets/images/logo.png';
-import { Link } from 'react-router-dom';
+import logo from '../../public/assets/images/logo.png';
 
 const Header = ({ disableSticky }) => {
     const headerLinks = () => HEADER_LINKS.map((item) =>
-        <li key={item.label} className={'nav-element'}>
+        <li key={item.label}>
             {
-                item.isAnchor
-                ? <a href={item.linkTo}>{item.label}</a>
-                : <Link to={item.linkTo}>{item.label}</Link>
+                <a href={item.linkTo}>{item.label}</a>
             }
         </li>
     )
 
+    if (process.browser) {
+        // Client-side-only code
+        const stickyFunction = () => window.addEventListener('scroll', function() {
+            let header = document.querySelector('nav');
+
+            if (header && !disableSticky) {
+                header.classList.toggle(`${styles.sticky}`, window.scrollY > 0);
+            }
+        })
+        stickyFunction();
+    }
+
     return (
-        <nav className={disableSticky ? 'header-wrapper sticky-disabled' : 'header-wrapper'}>
-            <div className={'header-image-wrapper'}>
-                <img alt={'logo'} className="header-image" src={logo} />
+        <nav className={disableSticky ? `${styles.wrapper} ${styles.stickyDisabled}` : `${styles.wrapper}`}>
+            <div className={styles.image_wrapper}>
+                <img alt={'Lina consulting logo'} className={styles.image} src={logo} />
             </div>
-            <ul className={'nav-menu'} id={'large-screen-menu'}>
+            <ul className={`${styles.navigation} ${styles.large_menu}`}>
                 {
                    headerLinks()
                 }
             </ul>
             <MobileMenu menuItems={headerLinks} />
-            <script type={'text/javascript'}>
-                {
-                    window.addEventListener('scroll', function() {
-                        let header = document.querySelector('nav');
-
-                        if (header && !disableSticky) {
-                            header.classList.toggle("sticky", window.scrollY > 0);
-                        }
-                    })
-                }
-            </script>
         </nav>
     )
 };

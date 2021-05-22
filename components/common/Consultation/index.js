@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 //css
-import './consultation.scss'
-
+import styles from './consultation.module.scss'
 
 const Consultation = () => {
     return(
-        <div className={'consultation-container'}>
-            <div className={'consultation-content'}>
-                <p className={'consultation-text'}>Get a free Consultation</p>
-                <Link to={'/contact'} className={'link-consultation'}>
+        <div className={styles.consultationContainer}>
+            <div className={styles.consultationContent}>
+                <p className={styles.consultationText}>Get a free Consultation</p>
+                <Link href={'/contact'} className={styles.linkConsultation}>
                     <p style={{textAlign: 'center'}}>Apply Now</p>
                 </Link>
             </div>

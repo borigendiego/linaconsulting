@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //Style
-import './mobileMenu.scss';
+import styles from './mobileMenu.module.scss';
 
 const MobileMenu = ({ menuItems }) => {
     return (
-        <div id={'menuToggle'}>
+        <div className={styles.toggle}>
             <input type="checkbox" />
             <span />
             <span />
             <span />
-            <ul id={'menu'}>
+            <ul className={styles.menu}>
                 {menuItems()}
             </ul>
         </div>

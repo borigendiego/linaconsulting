@@ -1,6 +1,6 @@
 import React from 'react';
 //css
-import './services.scss'
+import './services.module.scss'
 //Components
 import SectionLayout from '../common/SectionLayout/SectionLayout';
 import Tile from './Tile';
@@ -9,12 +9,13 @@ import MobileCarousel from '../common/mobileCarousel';
 //Constants
 import { SERVICES_TEXT } from './constants';
 //Images
-import image1 from '../../assets/images/services1.jpg'
-import image2 from '../../assets/images/services3.jpg'
-import image3 from '../../assets/images/services3.jpg'
-import image4 from '../../assets/images/services4.jpg'
-import image5 from '../../assets/images/services5.jpg'
-import image6 from '../../assets/images/services6.jpg'
+import image1 from '../../public/assets/images/services1.jpg';
+import image2 from '../../public/assets/images/services3.jpg';
+import image3 from '../../public/assets/images/services3.jpg';
+import image4 from '../../public/assets/images/services4.jpg';
+import image5 from '../../public/assets/images/services5.jpg';
+import image6 from '../../public/assets/images/services6.jpg';
+
 const Services = () => {
     const mockData = [
         {

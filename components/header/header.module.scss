@@ -1,6 +1,6 @@
 @import '../../css/variables';
 
-.header-wrapper {
+.wrapper {
   background-color: $main-blue;
   border-bottom: 4px solid $main-orange;
   display: flex;
@@ -11,35 +11,28 @@
   z-index: 10;
 }
 
-.header-image, .header-wrapper.sticky, .header-image-wrapper { transition: all 500ms; }
+.image, .wrapper.sticky, .image_wrapper { transition: all 500ms; }
 
-.header-wrapper.sticky {
+.wrapper.sticky {
   display: flex;
   justify-content: space-between;
-  .header-image-wrapper {
+  .image_wrapper {
     position: relative;
-    .header-image {
+    .image {
       transition: all 600ms;
       width: 30%;
     }
   }
 }
 
-.header-image-wrapper {
+.image_wrapper {
   left: 8%;
   position: absolute;
   width: 180px;
   max-width: 18vw;
 }
 
-#large-screen-menu {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-}
-
-.nav-menu {
+.navigation {
   display: flex;
   list-style: none;
   justify-content: flex-end;
@@ -67,37 +60,35 @@
     background-color: $main-orange;
     a { color: $main-blue; }
   }
-
-  .header-elements {
-    font-family: Arial, sans-serif;
-    padding: 1% 3%;
-
-    &:hover {
-      transition: all 0.3s;
-      background-color: $main-orange;
-      cursor: pointer;
-      color: $basic-font-color;
-    }
-  }
 }
-.header-image { width: 100%; }
+
+.large_menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 0;
+  padding: 0;
+  width: 60%;
+}
+
+.image { width: 100%; }
 
 @media (max-width: $md-screen) {
-  #large-screen-menu { display: none; }
-  .header-image-wrapper { max-width: 130px; }
+  .large_menu { display: none; }
+  .image_wrapper { max-width: 130px; }
 }
 
 @media (max-width: $xs-screen) {
-  .header-wrapper.sticky {
-    .header-image { height: 5vh !important; }
+  .wrapper.sticky {
+    .image { height: 5vh !important; }
   }
 
   .sticky-disabled {
     justify-content: space-between;
-    .header-image-wrapper {
+    .image_wrapper {
       position: relative;
       left: 0;
-      .header-image { height: 4vh; }
+      .image { height: 4vh; }
     }
   }
 }

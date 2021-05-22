@@ -1,6 +1,4 @@
 import React from 'react';
-//Styles
-import '../css/globalStyles.scss';
 //Components
 import Header from '../components/header';
 import Services from '../components/services';

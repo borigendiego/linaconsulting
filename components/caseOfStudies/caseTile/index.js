@@ -1,13 +1,14 @@
 import React from 'react';
 //Styles
-import './caseTile.scss'
-const CaseTile = (props) => {
-    const { title, text } = props.caseData;
+import styles from './caseTile.module.scss';
+
+const CaseTile = ({ caseData }) => {
+    const { title, text } = caseData;
 
     return (
-        <div className={'case-tile-wrapper'}>
-            <h2 className={'case-tile-title'}>{title}</h2>
-            <p className={'case-tile-text'}>{text}</p>
+        <div className={styles.caseTileWrapper}>
+            <h2 className={styles.caseTileTitle}>{title}</h2>
+            <p className={styles.caseTileText}>{text}</p>
         </div>
     )
 };

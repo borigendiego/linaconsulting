@@ -9,9 +9,9 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 //Styles
-import './customCarousel.scss';
+import './customCarousel.module.scss';
 //Icon
-import arrow from '../../../assets/images/atras.svg'
+import arrow from '../../../public/assets/images/atras.svg';
 
 const CustomCarouselSection = ({ data }) => {
     const [currentItem, setCurrentItem] = useState(0);
