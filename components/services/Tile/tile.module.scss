@@ -4,14 +4,14 @@
   background-color: $main-orange;
   position: relative;
 
-  .tile-image { display: none; }
+  .image { display: none; }
 
-  .tile-title {
+  .title {
     color: $basic-font-color;
     margin: 0 auto 2% auto;
   }
 
-  .tile-text {
+  .text {
     display: flex;
     align-items: center;
     text-align: center;
@@ -19,7 +19,7 @@
   }
 }
 
-.tile-content {
+.content {
   transition: all 0.5s;
   margin: 2% 0;
   padding: 2%;
@@ -32,14 +32,14 @@
   position: relative;
   top: 0;
 
-  .tile-title {
+  .title {
     font-size: 1.1em;
     text-align: center;
     margin-top: 15%;
     color: $main-orange;
   }
 
-  .tile-image {
+  .image {
     border-radius: 50%;
     height: 20vh;
     width: 20vh;
@@ -49,24 +49,24 @@
     margin-top: 2%;
   }
 
-  .tile-text {
+  .text {
     display: none;
     color: $white-color;
     font-size: 0.9rem;
   }
 }
 
-.tile-content:hover {
+.content:hover {
   @include tile-on-hover;
   top: -15px;
 }
 
 @media (min-width: $lg-screen) {
-  .tile-content { min-height: 40vh; }
+  .content { min-height: 40vh; }
 }
 
 @media (max-width: $xs-screen) {
-  .tile-content {
+  .content {
     @include tile-on-hover;
     width: 100%;
     height: 38vh;

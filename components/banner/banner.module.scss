@@ -1,15 +1,14 @@
 @import '../../css/variables.scss';
 
-.banner-container {
+.container {
   height: 100vh;
-  background-image: url('/public/assets/images/banner.jpg');
+  background-image: url('/assets/images/banner.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-
-.banner-text {
+.text {
   font-family: Arial, sans-serif;
   background-color: rgba(254, 202, 31, 0.5);
   color: $white-color;
@@ -23,7 +22,7 @@
 }
 
 @media (max-width: $xs-screen) {
-  .banner-text {
+  .text {
     padding-left: 4%;
   }
 

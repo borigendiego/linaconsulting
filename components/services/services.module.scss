@@ -1,18 +1,18 @@
 @import '../../css/variables';
 
-.tile-container {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.pyramid-title {
+.pyramid_title {
   text-align: center;
   padding-top: 1%;
   font-size: 2.2rem;
 }
 
-.pyramid-text {
+.pyramid_text {
   text-align: center;
   font-size: 1.2rem;
   padding: 5% 10%;
@@ -20,12 +20,18 @@
   color: $white-color;
 }
 
+.tile_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 @media (max-width: $xs-screen) {
-  .tile-container {
+  .container {
     display: none;
   }
 
-  .pyramid-text {
+  .pyramid_text {
     font-size: 1rem;
     padding: 5%;
     margin-bottom: 10%;

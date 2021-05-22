@@ -11,9 +11,9 @@ const SectionLayout = ({ sectionTitle, sectionSubTitle, sectionId, children, lay
     }
 
     return (
-        <div className={styles.sectionContainer} id={sectionId} style={{padding: layoutPadding[layoutWidth]}}>
-            <h1 className={styles.sectionTitle}>{sectionTitle}</h1>
-            <h3 className={styles.sectionSubtitle}>{sectionSubTitle}</h3>
+        <div className={styles.container} id={sectionId} style={{padding: layoutPadding[layoutWidth]}}>
+            <h1 className={styles.title}>{sectionTitle}</h1>
+            <h3 className={styles.subtitle}>{sectionSubTitle}</h3>
             {children}
         </div>
     )
