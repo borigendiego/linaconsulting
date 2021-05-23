@@ -1,16 +1,16 @@
 @import '../../css/variables';
 
-.delivery-container {
+.container {
   height: 75vh;
   position: relative;
 }
 
-.delivery-pyramid {
+.pyramid {
   background-color: $white-color;
   clip-path: $pyramid-title;
 }
 
-.pyramid-overlay {
+.pyramid_overlay {
   background-color: $grey-color;
   clip-path: polygon(50% 20%, 100% 0, 100% 70%, 49% 100%, 0 70%, 0 0);
   height: 100%;
@@ -21,11 +21,17 @@
   z-index: -1;
 }
 
+.pyramid_title {
+  text-align: center;
+  padding-top: 1%;
+  font-size: 2.2rem;
+}
+
 @media (max-width: $xs-screen) {
-  .delivery-container {
+  .container {
     display: none;
   }
-  .py-title {
+  .pyramid_title {
     font-size: 1.8rem;
     width: 90%;
     margin: 10% auto;

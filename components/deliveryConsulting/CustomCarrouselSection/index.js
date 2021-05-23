@@ -9,7 +9,7 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 //Styles
-import './customCarousel.module.scss';
+import styles from './customCarousel.module.scss';
 //Icon
 import arrow from '../../../public/assets/images/atras.svg';
 
@@ -17,22 +17,22 @@ const CustomCarouselSection = ({ data }) => {
     const [currentItem, setCurrentItem] = useState(0);
 
     return (
-        <div className={'carousel-wrapper'}>
+        <div className={styles.carousel_wrapper}>
             <CarouselProvider
                 naturalSlideWidth={200}
                 naturalSlideHeight={125}
                 totalSlides={data.length}
-                className={'carousel-container'}
+                className={styles.carousel_container}
             >
-                <div className={'sliders'}>
+                <div className={styles.sliders}>
                     <ButtonBack
-                        className={'arrow-button back'}
+                        className={`${styles.arrow_button} ${styles}`}
                         onClick={() => setCurrentItem(currentItem - 1)}
                     >
                         <img alt={'back-arrow'} src={arrow} />
                     </ButtonBack>
                     <Slider
-                        className={'slider-wrapper'}
+                        className={styles.slider_wrapper}
                     >
                         {
                             data.map((item, index) =>
@@ -43,15 +43,15 @@ const CustomCarouselSection = ({ data }) => {
                         }
                     </Slider>
                     <ButtonNext
-                        className={'arrow-button next'}
+                        className={`${styles.arrow_button} ${styles.next}`}
                         onClick={() => setCurrentItem(currentItem + 1)}
                     >
                         <img alt={'next-arrow'} src={arrow} />
                     </ButtonNext>
                 </div>
-                <DotGroup className={'dots-container'} />
+                <DotGroup className={styles.dots_container} />
             </CarouselProvider>
-            <div className={'description-wrapper'}>
+            <div className={styles.description_wrapper}>
                 <h2>{data[currentItem].title}</h2>
                 <p>{data[currentItem].paragraph}</p>
             </div>
