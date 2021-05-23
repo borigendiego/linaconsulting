@@ -1,11 +1,11 @@
 @import '../../../css/variables';
 
 //TODO: Why are we using a class instead of css hover?
-.box-hover {
+.hover {
   background-color: $main-orange;
   background-image: none;
 
-  .box-text { display: block; }
+  .text { display: block; }
 }
 
 .box {
@@ -48,11 +48,11 @@
   background-color: #feca1f;
 }
 
-.box-title {
+.title {
   font-family: $main-font;
 }
 
-.box-text {
+.text {
   font-size: clamp(12px, 0.9rem, 16px);
   display: none;
   color: $white-color;

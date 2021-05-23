@@ -20,33 +20,33 @@ const Carousel = ({ carouselData }) => {
             naturalSlideHeight={80}
             totalSlides={6}
             visibleSlides={3}
-            className={styles.simpleCarouselContainer}
+            className={styles.container}
         >
-            <div className={styles.simpleCarouselWrapper}>
-                <ButtonBack className={'arrow-button back'}>
+            <div className={styles.wrapper}>
+                <ButtonBack className={`${styles.arrow_button}`}>
                     <img alt={'left-arrow'} src={arrow} />
                 </ButtonBack>
 
-                <Slider className={styles.simpleCarousel_slider}>
+                <Slider className={styles.slider}>
                     {
                         carouselData.map((item, index) =>
                             <Slide
                                 key={item.id}
                                 index={index}
                                 style={{backgroundImage: `url(${item.image})`}}
-                                className={styles.simpleCarouse_slide}
+                                className={styles.slide}
                             >
-                                <h4 className={styles.simpleCarouse_slide_title}>{item.title}</h4>
-                                <p className={styles.simpleCarouse_slide_text}>{item.text}</p>
+                                <h4 className={styles.slide_title}>{item.title}</h4>
+                                <p className={styles.slide_text}>{item.text}</p>
                             </Slide>
                         )
                     }
                 </Slider>
-                <ButtonNext className={'arrow-button next'}>
+                <ButtonNext className={`${styles.arrow_button} ${styles.next}`}>
                     <img alt={'right-arrow'} src={arrow} />
                 </ButtonNext>
             </div>
-            <DotGroup className={'dots-container'} />
+            <DotGroup className={`${styles.dots_container}`} />
         </CarouselProvider>
     )
 }

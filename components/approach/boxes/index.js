@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 //css
 import styles from './boxes.module.scss';
 
-const Box = (props) => {
-    const { title, text, backgroundImage } = props.boxData;
-
+const Box = ({ boxData }) => {
+    const { title, text, backgroundImage } = boxData;
     const [isHover, setIsHover] = useState(false);
 
     const boxStyle = {
@@ -15,14 +14,14 @@ const Box = (props) => {
 
     return(
         <div
-            className={ isHover ? `${styles.boxHover} ${styles.box}` : styles.box}
+            className={ isHover ? `${styles.hover} ${styles.box}` : styles.box}
             style={boxStyle}
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
         >
             <div className={'box-content'}>
-                <h2 className={styles.boxTitle}>{title}</h2>
-                <p className={styles.boxText}>{text}</p>
+                <h2 className={styles.title}>{title}</h2>
+                <p className={styles.text}>{text}</p>
             </div>
         </div>
     )

@@ -1,11 +1,11 @@
 @import '../../css/variables';
 
-.case-mobile { display: none; }
+.mobile { display: none; }
 
-.case-carousel-container { display: initial; }
+.carousel_container { display: initial; }
 
 @media (max-width: $xs-screen) {
-  .case-carousel-container { display: none; }
+  .carousel_container { display: none; }
 
-  .case-mobile { display: initial; }
+  .mobile { display: initial; }
 }

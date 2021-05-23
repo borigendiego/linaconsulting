@@ -15,10 +15,10 @@ const CaseOfStudies = () => {
             sectionTitle={'CASE STUDIES'}
             sectionSubTitle={'Our strategy for your path to success'}
         >
-            <div className={styles.caseCarouselContainer}>
+            <div className={styles.carousel_container}>
                 <SimpleCarousel carouselData={CAROUSEL_DATA} />
             </div>
-            <div className={styles.caseMobile}>
+            <div className={styles.mobile}>
                 { CAROUSEL_DATA.map((value, index) => <CaseTile caseData={value} key={index} />)}
             </div>
         </SectionLayout>
