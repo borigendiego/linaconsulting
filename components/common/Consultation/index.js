@@ -5,10 +5,10 @@ import styles from './consultation.module.scss'
 
 const Consultation = () => {
     return(
-        <div className={styles.consultationContainer}>
-            <div className={styles.consultationContent}>
-                <p className={styles.consultationText}>Get a free Consultation</p>
-                <Link href={'/contact'} className={styles.linkConsultation}>
+        <div className={styles.container}>
+            <div className={styles.content}>
+                <p className={styles.text}>Get a free Consultation</p>
+                <Link href={'/contact'} className={styles.link}>
                     <p style={{textAlign: 'center'}}>Apply Now</p>
                 </Link>
             </div>

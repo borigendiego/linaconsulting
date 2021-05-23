@@ -1,12 +1,12 @@
 @import '../../../css/variables';
 
-.consultation-container {
+.container {
   background-color: $main-blue;
   height: 20vh;
   display: flex;
 }
 
-.consultation-content {
+.content {
   border: $main-orange solid 3px;
   display: flex;
   align-items: center;
@@ -16,29 +16,29 @@
   width: 80%;
 }
 
-.consultation-text {
+.text {
   color: $white-color;
   font-family: $main-font;
   font-size: 1.3rem;
 }
 
-.link-consultation {
+.link {
   background-color: $main-orange;
   font-size: 1.2rem;
   padding: 1%;
 }
 
 @media (max-width: $xs-screen) {
-  .consultation-container {
+  .container {
     height: 15vh;
   }
 
-  .consultation-text {
+  .text {
     padding: 1% 1% 1% 2%;
     margin: 0;
   }
 
-  .link-consultation {
+  .link {
     left: 0;
     margin-right: 5%;
   }
