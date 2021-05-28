@@ -15,7 +15,7 @@ import Arrow from './assets/right-arrow.svg';
 
 const MyCarousel = ({ slides }) => {
     return (
-        <div className={styles.mobileCarousel_container}>
+        <div className={styles.container}>
             <CarouselProvider
                 naturalSlideWidth={200}
                 naturalSlideHeight={110}
@@ -23,7 +23,7 @@ const MyCarousel = ({ slides }) => {
             >
                 <div className={'mobile-carousel_sliders'}>
                     <Slider
-                        className={'mobile-carousel_slider-wrapper'}
+                        className={styles.slider_wrapper}
                     >
                         {
                             slides.map((item, index) =>

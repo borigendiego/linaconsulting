@@ -1,12 +1,11 @@
 @import '../../css/variables';
 
-.about-section {
-  //background-image: url('../../assets/images/about-us-image.jpg');
-  background-image: url('/public/assets/images/about-us-image.jpg');
+.section {
+  background-image: url('/assets/images/about-us-image.jpg');
   background-position-x: 20vw;
 }
 
-.about-text_container {
+.text_container {
   width: 45%;
   padding: 2% 3%;
   background-color: #f0f8ffc9;
@@ -14,48 +13,45 @@
   bottom: 10%;
 }
 
+.title { margin: 10% 0; }
 
-.about-title { margin: 10% 0; }
-
-.about-title h1 {
+.title h1 {
   color: $main-blue;
   text-align: right;
   font-size: clamp(20px, 4vw, 42px);
 }
 
-.about-title-two {
+.title_two {
   color: $main-orange;
   margin-top: 5%;
   margin-bottom: 2%;
   padding-left: 3%;
 }
 
-.about-text {
+.text {
   font-family: $main-font;
   margin-top: 3%;
   margin-bottom: 5%;
 }
 
 @media (max-width: $xs-screen) {
-  .about-section {
+  .section {
     background-position-x: 20%;
     background-size: cover;
   }
 
-  .about-content {
+  .content {
     width: 75%;
     margin: 0 auto;
     padding-top: 50%;
   }
 
-  .about-title, .logo-title { display: inline; }
-
-  .about-title h1 {
+  .title h1 {
     text-align: center;
     font-size: clamp(30px, 4vw, 60px);
   }
 
-  .about-text_container {
+  .text_container {
     width: 90%;
     margin: auto;
     padding-top: 15%;
