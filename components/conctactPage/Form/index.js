@@ -1,15 +1,15 @@
 import React from 'react';
 //Components
-import MyCustomForm from '../../common/myCustomForm';
+import { Form } from 'hippo-components';
 //Validations
-import { required, email } from './fieldValidations'
+import { required, email } from './fieldValidations';
 
-const Form = () => {
+const LinaForm = () => {
     return (
         <div className={'form-container'}>
             <h2 className={'form-title'}>Free Consultation</h2>
             <div className={'form-content'}>
-                <MyCustomForm
+                <Form
                     fields={[
                         {
                             name: 'name',
@@ -46,4 +46,4 @@ const Form = () => {
     )
 };
 
-export default Form;
+export default LinaForm;
