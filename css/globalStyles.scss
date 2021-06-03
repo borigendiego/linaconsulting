@@ -49,10 +49,43 @@ a {
   }
 }
 
+/****Custom Classes****/
+
 .page-title {
   display: inline-block;
   text-align: right;
   position: relative;
   left: calc(100vw - 92%);
   top: 12%;
+}
+
+.lina-contact-form {
+  .item { margin: 2% 0; }
+
+  .input {
+    border: 2px solid #000;
+    border-radius: 0;
+    height: 5vh;
+    padding-left: 1%;
+  }
+
+  textarea {
+    border: 2px solid #000;
+    border-radius: 0;
+    padding-left: 1%;
+  }
+
+  .contact-input-button {
+    padding: 1.5% 2%;
+    color: $main-orange;
+    background-color: $main-blue;
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $main-orange;
+      color: $main-blue;
+      cursor: pointer;
+    }
+  }
 }

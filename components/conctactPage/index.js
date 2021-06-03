@@ -1,30 +1,30 @@
 import React from 'react';
-//Css
-import './contactPage.module.scss';
+//css
+import styles from './contactPage.module.scss';
 //components
 import Form from './Form';
 import { contactItem } from '../contact';
 //images
-import icon1 from '../../public/assets/images/icon1.png';
-import icon2 from '../../public/assets/images/icon2.png';
+import locationIcon from '../../public/assets/images/icon1.png';
+import clock from '../../public/assets/images/icon2.png';
 
 const ContactP = () => {
     return (
-        <div className={'contact-page'}>
-            <div className={'contact-page-content'}>
-                <div className={'contact-logo-title'}>
-                    <h1 className={'contact-title'}>Get</h1>
-                    <h1 className={'contact-title-one'}>in touch</h1>
+        <div className={styles.page}>
+            <div className={styles.content}>
+                <div className={styles.logo_title}>
+                    <h1 className={styles.title}>Get</h1>
+                    <h1 className={styles.title_one}>in touch</h1>
                 </div>
-                <div className={'icons-text'}>
-                    {contactItem(<p className={'contact-page-text'}>Melbourne, Australia</p>, icon1, 'contact-page-item', 'contact-page-img')}
-                    {contactItem(<p className={'contact-page-text'}>Monday - Friday<br/>9AM - 5PM</p>, icon2, 'contact-page-item', 'contact-page-img')}
+                <div className={styles.icons_text}>
+                    {contactItem(<p className={styles.text}>Melbourne, Australia</p>, locationIcon, 'contact-page-item', 'contact-page-img')}
+                    {contactItem(<p className={styles.text}>Monday - Friday<br/>9AM - 5PM</p>, clock, 'contact-page-item', 'contact-page-img')}
                 </div>
             </div>
             <Form />
-            <div className={'contact-overlay'}>
-                <div className={'contact-overlay_yellow-figure'} />
-                <div className={'contact-overlay_blue-line'} />
+            <div className={styles.overlay}>
+                <div className={styles.yellow_figure} />
+                <div className={styles.blue_line} />
             </div>
         </div>
     )

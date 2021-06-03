@@ -3,10 +3,12 @@ import React from 'react';
 import { Form } from 'hippo-components';
 //Validations
 import { required, email } from './fieldValidations';
+//css
+import styles from '../contactPage.module.scss';
 
 const LinaForm = () => {
     return (
-        <div className={'form-container'}>
+        <div className={styles.form_container}>
             <h2 className={'form-title'}>Free Consultation</h2>
             <div className={'form-content'}>
                 <Form
