@@ -10,7 +10,6 @@ import MobileCarousel from '../common/mobileCarousel';
 import { SERVICES_TEXT, TILE_DATA } from './constants';
 
 const Services = () => {
-
     return (
         <div className={styles.container} id={'SERVICES'}>
             <Pyramid>
@@ -24,7 +23,7 @@ const Services = () => {
                 layoutWidth={'lg'}
             >
                 <div className={styles.tile_container}>
-                    {TILE_DATA.map((value, index) => <Tile tileData={value} key={index} />)}
+                    {TILE_DATA.map((value, index) => <Tile tileData={value} key={value.title} imageKey={index} />)}
                 </div>
                 <MobileCarousel slides={TILE_DATA.map((value, index) => <Tile tileData={value} key={index} />)} />
             </SectionLayout>

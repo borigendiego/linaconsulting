@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 //css
 import styles from './tile.module.scss';
 
-const Tile = ({ tileData }) => {
-    const { key, image, title, text } = tileData;
+const Tile = ({ tileData, imageKey }) => {
+    const { image, title, text } = tileData;
 
     return(
         <div className={styles.content}>
-            <img alt={`${key}-tile-img`} src={image} className={styles.image}/>
+            <img alt={`${imageKey}-tile-img`} src={image} className={styles.image}/>
             <h6 className={styles.title}>{title}</h6>
             <p className={styles.text}>{text}</p>
         </div>

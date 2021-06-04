@@ -1,6 +1,5 @@
 const withImages = require('next-images');
 
-module.exports = withImages();
 module.exports = {
     webpack: (config, { isServer }) => {
         // Fixes npm packages that depend on `fs` module
@@ -11,7 +10,7 @@ module.exports = {
         }
 
         config.module.rules.push({
-            test: /\.(jpeg|png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+            test: /\.(png|jpg|jpeg|gif|svg|eot|ttf|woff|woff2)$/,
             use: {
                 loader: 'url-loader',
                 options: {
@@ -23,3 +22,4 @@ module.exports = {
         return config
     }
 }
+module.exports = withImages();
