@@ -13,12 +13,8 @@
   bottom: 10%;
 }
 
-.title { margin: 10% 0; }
-
 .title h1 {
   color: $main-blue;
-  text-align: right;
-  font-size: clamp(20px, 4vw, 42px);
 }
 
 .title_two {
@@ -45,12 +41,7 @@
     margin: 0 auto;
     padding-top: 50%;
   }
-
-  .title h1 {
-    text-align: center;
-    font-size: clamp(30px, 4vw, 60px);
-  }
-
+  
   .text_container {
     width: 90%;
     margin: auto;

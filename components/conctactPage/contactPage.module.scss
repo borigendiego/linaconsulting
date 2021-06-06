@@ -19,14 +19,9 @@
   width: 50%;
 }
 
-.logo_title {
-  display: inline-block;
+.logo_title h1 {
   font-family: $title-font-family;
-  text-align: right;
-  position: relative;
-  left: 20%;
-
-  .title_one, .title { color: $main-blue; }
+  color: $main-blue;
 }
 
 .item {
@@ -99,8 +94,6 @@
 
     .image { width: 60%; }
   }
-
-  .logo_title { text-align: center; }
 
   .form_container { width: 100% }
 

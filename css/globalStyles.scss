@@ -50,13 +50,38 @@ a {
 }
 
 /****Custom Classes****/
+nav img {
+  transform: translateY(-100%);
+}
+
+.nav-sticky img {
+  transform: translateY(0);
+}
 
 .page-title {
   display: inline-block;
   text-align: right;
   position: relative;
-  left: calc(100vw - 92%);
-  top: 12%;
+  left: 5%;
+  z-index: 12;
+  div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  img {
+    transition: all 600ms;
+    transform: translate(0);
+  }
+}
+
+.sticky {
+  z-index: 1;
+}
+
+.sticky img {
+  transition: all 600ms;
+  transform: translate(-230%);
 }
 
 .lina-contact-form {

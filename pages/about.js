@@ -6,7 +6,7 @@ import AboutComp from '../components/about';
 const About = () => {
     return (
         <>
-            <Header disableSticky />
+            <Header />
             <AboutComp />
         </>
     )

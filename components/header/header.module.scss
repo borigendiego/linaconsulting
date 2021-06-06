@@ -4,8 +4,8 @@
   background-color: $main-blue;
   border-bottom: 4px solid $main-orange;
   display: flex;
-  justify-content: flex-end;
-  padding: 0 2%;
+  justify-content: space-between;
+  padding: 0 4%;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -25,12 +25,12 @@
   }
 }
 
-.image_wrapper {
+/*.image_wrapper {
   left: 8%;
   position: absolute;
   width: 180px;
   max-width: 18vw;
-}
+}*/
 
 .navigation {
   display: flex;
@@ -66,12 +66,11 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 1% 0;
   padding: 0;
   width: 60%;
 }
 
-.image { width: 100%; }
+.image { height: 60px; }
 
 @media (max-width: $md-screen) {
   .large_menu { display: none; }

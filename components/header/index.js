@@ -21,10 +21,12 @@ const Header = ({ disableSticky }) => {
     if (process.browser) {
         // Client-side-only code
         const stickyFunction = () => window.addEventListener('scroll', function() {
-            let header = document.querySelector('nav');
+            let pagTitle = document.querySelector('.page-title');
+            let navigation = document.querySelector('nav');
 
-            if (header && !disableSticky) {
-                header.classList.toggle(`${styles.sticky}`, window.scrollY > 0);
+            if (pagTitle && navigation && !disableSticky) {
+                pagTitle.classList.toggle('sticky', window.scrollY > 0);
+                navigation.classList.toggle('nav-sticky', window.scrollY > 0);
             }
         })
         stickyFunction();
@@ -32,9 +34,7 @@ const Header = ({ disableSticky }) => {
 
     return (
         <nav className={disableSticky ? `${styles.wrapper} ${styles.stickyDisabled}` : `${styles.wrapper}`}>
-            <div className={styles.image_wrapper}>
-                <img alt={'Lina consulting logo'} className={styles.image} src={logo} />
-            </div>
+            <img alt={'Lina consulting logo'} className={styles.image} src={logo} />
             <ul className={`${styles.navigation} ${styles.large_menu}`}>
                 {
                    headerLinks()

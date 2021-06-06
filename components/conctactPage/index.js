@@ -7,14 +7,18 @@ import { contactItem } from '../contact';
 //images
 import locationIcon from '../../public/assets/images/icon1.png';
 import clock from '../../public/assets/images/icon2.png';
+import logo from '../../public/assets/images/logo.png';
 
 const ContactP = () => {
     return (
         <div className={styles.page}>
             <div className={styles.content}>
-                <div className={styles.logo_title}>
-                    <h1 className={styles.title}>Get</h1>
-                    <h1 className={styles.title_one}>in touch</h1>
+                <div className={`page-title ${styles.logo_title}`}>
+                    <div>
+                        <img alt={'Lina consulting logo'} src={logo} />
+                        <h1>Get</h1>
+                    </div>
+                    <h1>in touch</h1>
                 </div>
                 <div className={styles.icons_text}>
                     {contactItem(<p className={styles.text}>Melbourne, Australia</p>, locationIcon, 'contact-page-item', 'contact-page-img')}
