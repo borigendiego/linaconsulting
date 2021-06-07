@@ -8,8 +8,8 @@ const Consultation = () => {
         <div className={styles.container}>
             <div className={styles.content}>
                 <p className={styles.text}>Get a free Consultation</p>
-                <Link href={'/contact'} className={styles.link}>
-                    <p style={{textAlign: 'center'}}>Apply Now</p>
+                <Link href={'/contact'}>
+                    <a className={styles.link}>Apply Now</a>
                 </Link>
             </div>
         </div>
