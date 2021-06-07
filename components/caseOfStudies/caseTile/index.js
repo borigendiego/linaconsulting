@@ -6,9 +6,9 @@ const CaseTile = ({ caseData }) => {
     const { title, text } = caseData;
 
     return (
-        <div className={styles.caseTileWrapper}>
-            <h2 className={styles.caseTileTitle}>{title}</h2>
-            <p className={styles.caseTileText}>{text}</p>
+        <div className={styles.wrapper}>
+            <h2 className={styles.title}>{title}</h2>
+            <p className={styles.text}>{text}</p>
         </div>
     )
 };
