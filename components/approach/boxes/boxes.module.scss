@@ -48,12 +48,20 @@
   background-color: #feca1f;
 }
 
-.title {
-  font-family: $main-font;
-}
+.title { font-family: $main-font; }
 
 .text {
   font-size: clamp(12px, 0.9rem, 16px);
   display: none;
   color: $white-color;
+}
+
+@media (max-width: $md-screen) {
+  .box {
+    grid-column: unset !important;
+    grid-row: unset !important;
+    background-image: none !important;
+    background-color: #feca1f;
+    .text { display: block; }
+  }
 }
