@@ -8,6 +8,8 @@ module.exports = withImages({
             }
         }
 
+
         return config
-    }
+    },
+    target: 'serverless'
 })
