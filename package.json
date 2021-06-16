@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "next": "^10.2.0",
-    "node-sass": "4.14.1",
     "prop-types": "latest",
     "pure-react-carousel": "^1.27.6",
     "react": "^17.0.1",
@@ -21,7 +20,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "eslintConfig": {
     "extends": [
@@ -44,7 +44,10 @@
   "devDependencies": {
     "core-js": "^3.13.1",
     "hippo-components": "^1.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^9.0.0",
     "net": "^1.0.2",
-    "next-images": "^1.7.0"
+    "next-optimized-images": "^2.6.2"
   }
 }

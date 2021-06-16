@@ -1,15 +1,13 @@
-const withImages = require('next-images');
+const withOptimizedImages = require('next-optimized-images');
 
-module.exports = withImages({
-    webpack(config, {isServer}) {
-        if (!isServer) {
+module.exports = withOptimizedImages({
+    webpack(config, se) {
+        if (!se.isServer) {
             config.node = {
                 fs: 'empty'
             }
         }
 
-
         return config
     },
-    target: 'serverless'
 })

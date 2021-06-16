@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image'
 //css
 import styles from './contactPage.module.scss';
 //components
@@ -8,7 +7,7 @@ import { contactItem } from '../contact';
 //images
 import locationIcon from '../../public/assets/images/icon1.png';
 import clock from '../../public/assets/images/icon2.png';
-import logo from '../../public/assets/images/logo.png';
+import logo from "../../public/assets/images/logo.png";
 
 const ContactP = () => {
     return (
@@ -16,12 +15,7 @@ const ContactP = () => {
             <div className={styles.content}>
                 <div className={`page-title ${styles.logo_title}`}>
                     <div>
-                        <Image
-                            alt={'Lina consulting logo'}
-                            src={logo}
-                            width={180}
-                            height={180}
-                        />
+                        <img alt={'Lina consulting logo'} src={logo} />
                         <h1>Get</h1>
                     </div>
                     <h1>in touch</h1>
