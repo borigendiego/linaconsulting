@@ -13,7 +13,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 //Icons
 import Arrow from './assets/right-arrow.svg';
 
-const MyCarousel = ({ slides }) => {
+const MobileCarousel = ({ slides }) => {
     return (
         <div className={styles.container}>
             <CarouselProvider
@@ -21,24 +21,22 @@ const MyCarousel = ({ slides }) => {
                 naturalSlideHeight={110}
                 totalSlides={slides.length}
             >
-                <div className={'mobile-carousel_sliders'}>
-                    <Slider
-                        className={styles.slider_wrapper}
-                    >
-                        {
-                            slides.map((item, index) =>
-                                <Slide key={`slide-${index}`} index={index} className={'mobile-carousel_slide'}>
-                                    {item}
-                                </Slide>
-                            )
-                        }
-                    </Slider>
-                </div>
-                <div className={'arrows-container'}>
-                    <ButtonBack className={'arrow back'}>
+                <Slider
+                    className={styles.slider_wrapper}
+                >
+                    {
+                        slides.map((item, index) =>
+                            <Slide key={`slide-${index}`} index={index}>
+                                {item}
+                            </Slide>
+                        )
+                    }
+                </Slider>
+                <div className={styles.arrows_container}>
+                    <ButtonBack className={`${styles.arrow} ${styles.back}`}>
                         <img alt={'back-arrow'} src={Arrow} />
                     </ButtonBack>
-                    <ButtonNext className={'arrow next'}>
+                    <ButtonNext className={`${styles.arrow} ${styles.next}`}>
                         <img alt={'back-arrow'} src={Arrow} />
                     </ButtonNext>
                 </div>
@@ -47,8 +45,8 @@ const MyCarousel = ({ slides }) => {
     )
 };
 
-MyCarousel.prototypes = {
+MobileCarousel.prototypes = {
     slides: PropTypes.array,
 };
 
-export default MyCarousel;
+export default MobileCarousel;

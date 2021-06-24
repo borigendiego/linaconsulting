@@ -75,9 +75,7 @@ nav img {
   }
 }
 
-.sticky {
-  z-index: 1;
-}
+.sticky { z-index: 1; }
 
 .sticky img {
   transition: all 600ms;
@@ -112,5 +110,28 @@ nav img {
       color: $main-blue;
       cursor: pointer;
     }
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .header-image { transform: translateY(0); }
+
+  .page-title img {
+    visibility: hidden;
+    display: none;
+  }
+
+  .page-title {
+    top: 15%;
+    z-index: 1;
+    h1 { font-size: 3rem; }
+  }
+
+  //Mobile carousel styles
+  //TODO: Move mobile carousel to a new component
+  .carousel__inner-slide {
+    height: auto;
+    display: contents;
+    padding: 5%;
   }
 }

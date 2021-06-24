@@ -34,7 +34,7 @@ const Header = ({ disableSticky }) => {
 
     return (
         <nav className={disableSticky ? `${styles.wrapper} ${styles.stickyDisabled}` : `${styles.wrapper}`}>
-            <img alt={'Lina consulting logo'} className={styles.image} src={logo} />
+            <img alt={'Lina consulting logo'} className={`${styles.image} header-image`} src={logo} />
             <ul className={`${styles.navigation} ${styles.large_menu}`}>
                 {
                    headerLinks()

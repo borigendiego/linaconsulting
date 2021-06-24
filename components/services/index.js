@@ -25,7 +25,9 @@ const Services = () => {
                 <div className={styles.tile_container}>
                     {TILE_DATA.map((value, index) => <Tile tileData={value} key={value.title} imageKey={index} />)}
                 </div>
-                <MobileCarousel slides={TILE_DATA.map((value, index) => <Tile tileData={value} key={index} />)} />
+                <MobileCarousel
+                    slides={TILE_DATA.map((value, index) => <Tile tileData={value} key={index} />)}
+                />
             </SectionLayout>
         </div>
     )
