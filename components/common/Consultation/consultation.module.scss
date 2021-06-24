@@ -11,7 +11,6 @@
   display: flex;
   align-items: center;
   margin: auto;
-  justify-content: space-between;
   padding: 1% 2%;
   width: 80%;
 }
@@ -25,21 +24,16 @@
 .link {
   background-color: $main-orange;
   font-size: 1rem;
-  padding: 1%;
+  padding: 2%;
 }
 
 @media (max-width: $xs-screen) {
-  .container {
-    height: 15vh;
-  }
-
-  .text {
-    padding: 1% 1% 1% 2%;
-    margin: 0;
+  .content {
+    flex-direction: column;
   }
 
   .link {
-    left: 0;
-    margin-right: 5%;
+    padding: 5% 20%;
+    margin-top: 5%;
   }
 }
