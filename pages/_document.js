@@ -5,6 +5,17 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
+                    <title>Lina Consulting</title>
+                    <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover' />
+                    <meta name="theme-color" content="#000000" />
+                    <meta
+                        name="Lina Consulting"
+                        content="Consulting services"
+                    />
+                    <meta property='og:type' content='website' />
+                    <meta property='og:title' content='Lina Consulting' />
+                    <meta property='og:description' content='Lina Consulting - website' />
+                    <meta property='og:site_name' content='Lina Consulting' />
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
                     <script
                         async
@@ -24,8 +35,8 @@ export default class MyDocument extends Document {
                     />
                 </Head>
                 <body>
-                <Main />
-                <NextScript />
+                    <Main />
+                    <NextScript />
                 </body>
             </Html>
         )
