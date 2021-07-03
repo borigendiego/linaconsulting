@@ -9,7 +9,7 @@ const Consultation = () => {
             <div className={styles.content}>
                 <p className={styles.text}>Get a free Consultation</p>
                 <Link href={'/contact'}>
-                    <a className={styles.link}>Apply Now</a>
+                    <a className={'primary-button'}>Apply Now</a>
                 </Link>
             </div>
         </div>

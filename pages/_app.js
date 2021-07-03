@@ -1,4 +1,3 @@
-// import App from 'next/app'
 //Styles
 import '../css/globalStyles.scss';
 

@@ -60,12 +60,3 @@ $xs-screen: 450px;
   color: $green-succeed;
   border: 2px solid $green-succeed;
 }
-
-@media (max-width: $xs-screen) {
-  .contact-input-button {
-    height: 6vh;
-    width: 50vw;
-    display: block;
-    margin: auto;
-  }
-}

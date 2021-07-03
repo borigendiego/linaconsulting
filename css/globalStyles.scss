@@ -49,6 +49,19 @@ a {
   }
 }
 
+.primary-button {
+  background-color: $main-orange;
+  border: solid 3px $main-orange;
+  font-size: 1rem;
+  padding: 1%;
+}
+
+.primary-button:hover {
+  background-color: $main-blue;
+  color: $white-color;
+  text-decoration: none;
+}
+
 /****Custom Classes****/
 nav img {
   transform: translateY(-100%);
@@ -113,6 +126,9 @@ nav img {
   }
 }
 
+//TODO: Move mobile carousel to a new component
+.carousel__dot--selected { background-color: black; }
+
 @media (max-width: $xs-screen) {
   .header-image { transform: translateY(0); }
 
@@ -125,6 +141,19 @@ nav img {
     top: 15%;
     z-index: 1;
     h1 { font-size: 3rem; }
+  }
+
+  .primary-button {
+    //TODO: Refactor to not need to change sizes on mobile
+    padding: 3% 10%;
+    margin: 2% 0;
+  }
+
+  .lina-contact-form {
+    .contact-input-button {
+      width: 100%;
+      padding: 4% 2%;
+    }
   }
 
   //Mobile carousel styles

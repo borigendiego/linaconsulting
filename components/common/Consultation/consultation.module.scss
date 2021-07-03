@@ -10,6 +10,7 @@
   border: $main-orange solid 3px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: auto;
   padding: 1% 2%;
   width: 80%;
@@ -21,19 +22,6 @@
   font-size: 1.3rem;
 }
 
-.link {
-  background-color: $main-orange;
-  font-size: 1rem;
-  padding: 2%;
-}
-
 @media (max-width: $xs-screen) {
-  .content {
-    flex-direction: column;
-  }
-
-  .link {
-    padding: 5% 20%;
-    margin-top: 5%;
-  }
+  .content { flex-direction: column; }
 }

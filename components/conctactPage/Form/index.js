@@ -42,6 +42,7 @@ const LinaForm = () => {
                     onErrorMessage={'Please try again in some minutes'}
                     submitButtonLabel={'Send Request'}
                     customClass={'lina-contact-form'}
+                    emailServiceURL={''}
                 />
             </div>
         </div>

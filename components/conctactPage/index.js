@@ -13,7 +13,7 @@ const ContactP = () => {
     return (
         <div className={styles.page}>
             <div className={styles.content}>
-                <div className={`page-title ${styles.logo_title}`}>
+                <div className={`page-title ${styles.title}`}>
                     <div>
                         <img alt={'Lina consulting logo'} src={logo} />
                         <h1>Get</h1>
